@@ -1,5 +1,11 @@
+import Fullpage from "./components/Fullpage";
+
 function App() {
-  return <div className="App"></div>;
+  return (
+    <div className="App">
+      <Fullpage />
+    </div>
+  );
 }
 
 export default App;
