@@ -1,17 +1,18 @@
 .home {
   background-image: linear-gradient(blue, black);
   color: white;
+  min-height: 100vh;
 }
-.center > div {
+.center {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.home > div p {
+.home p {
   font-size: 1.5rem;
 }
-.home > div button {
+.home button {
   padding: 10px;
   background-color: crimson;
   color: white;
@@ -20,12 +21,19 @@
   font-size: 1.2rem;
   box-shadow: rgb(12, 12, 196) 2px 2px 5px;
 }
-.s2 {
-  background-image: linear-gradient(gray, black);
+
+ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
 }
-.s3 {
-  background-image: linear-gradient(pink, white);
-}
-.fp-slidesNav.fp-bottom {
-  text-align: center;
+ul li {
+  width: 150px;
+  height: 150px;
+  list-style: none;
+  background-color: crimson;
+  color: blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

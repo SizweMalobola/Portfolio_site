@@ -1,76 +1,71 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import styles from "./fullpageStyle.module.css";
-import ReactFullpage from "@fullpage/react-fullpage";
 import { gsap } from "gsap";
+import { TweenLite, TimelineLite } from "gsap/gsap-core";
 
 const Fullpage = () => {
+  const logo = useRef();
+  const listRef = [];
+  const tl = new TimelineLite({ paused: true });
   useEffect(() => {
-    gsap.to("#logo", { duration: 2, opacity: 0, scale: 8 });
-    gsap.from(`.${styles["home"]} > div p`, {
-      x: -500,
-      duration: 2,
-      opacity: 0,
-      ease: "back",
-    });
-    gsap.from(`.${styles["home"]} > div button`, {
-      y: -500,
-      x: 500,
-      delay: 3,
-      duration: 2,
-      rotate: 720,
-      ease: "back",
-      opacity: 0,
-    });
-    // gsap.registerPlugin(ScrollTrigger);
+    tl.to(logo.current, { duration: 2, autoAlpha: 0, scale: 8 })
+      .from(`.${styles["home"]} > p`, {
+        x: -500,
+        duration: 2,
+        autoAlpha: 0,
+        ease: "back",
+      })
+      .from(`.${styles["home"]} > button`, {
+        y: -500,
+        x: 500,
+        duration: 2,
+        rotate: 720,
+        ease: "back",
+        autoAlpha: 0,
+      })
+      .staggerFrom(listRef, 1, { y: 500, autoAlpha: 0, ease: "back" }, 0.1)
+      .play();
   }, []);
   return (
     <>
-      <ReactFullpage
-        //fullpage options
-        licenseKey={null}
-        scrollingSpeed={1000} /* Options here */
-        navigation={true}
-        navigationTooltips={["Home"]}
-        controlArrows={false}
-        slidesNavigation={true}
-        render={({ state, fullpageApi }) => {
-          console.log(state, fullpageApi);
-          return (
-            <ReactFullpage.Wrapper>
-              <div className={`section ${styles["home"]} ${styles["center"]}`}>
-                <div
-                  style={{
-                    width: "100px",
-                    height: "100px",
-                    backgroundColor: "green",
-                    display: "flex",
-                    justifyContent: "center",
-                    alignContent: "center",
-                  }}
-                  id="logo"
-                >
-                  <h1>Logo</h1>
-                </div>
-                <p>Section 1 (welcome to fullpage.js)</p>
-                <button onClick={() => fullpageApi.moveSectionDown()}>
-                  Click me to move down
-                </button>
-              </div>
-              <div className={`section ${styles["s2"]} ${styles["center"]}`}>
-                <p>Section 2</p>
-              </div>
-              <div className={`section ${styles["s3"]}`}>
-                <div className={`slide ${styles["sl1"]} ${styles["center"]}`}>
-                  <h1>slide 1</h1>
-                </div>
-                <div className={`slide ${styles["sl2"]} ${styles["center"]}`}>
-                  <h1>slide 2</h1>
-                </div>
-              </div>
-            </ReactFullpage.Wrapper>
-          );
-        }}
-      />
+      <div className={`section ${styles["home"]} ${styles["center"]}`}>
+        <div
+          style={{
+            width: "100px",
+            height: "100px",
+            backgroundColor: "green",
+            display: "flex",
+            justifyContent: "center",
+            alignContent: "center",
+          }}
+          ref={logo}
+        >
+          <h1>Logo</h1>
+        </div>
+        <p>Section 1 (welcome to fullpage.js)</p>
+        <button>Click me to move down</button>
+        <ul>
+          {[
+            "steve",
+            "jimmy lee",
+            " curtis jackson",
+            "tobbie",
+            "Sam",
+            "Phillion",
+          ].map((val, index) => {
+            return (
+              <li
+                key={val + index}
+                ref={(i) => {
+                  listRef[index] = i;
+                }}
+              >
+                {val}
+              </li>
+            );
+          })}
+        </ul>
+      </div>
     </>
   );
 };
