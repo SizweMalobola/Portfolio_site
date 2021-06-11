@@ -8,6 +8,7 @@ function Container({ children }) {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
+        backgroundColor: "FFFFFF",
       }}
     >
       {children}
