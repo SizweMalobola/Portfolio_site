@@ -10,7 +10,12 @@ function Navbar() {
         LOGO
       </a>
       <div className={styles["menu"]}>
-        <span>menu</span>
+        <span className={styles["menu-text"]}>MENU</span>
+        <b className={styles["menu-icons"]}>
+          <i></i>
+          <i></i>
+          <i></i>
+        </b>
       </div>
     </nav>
   );
