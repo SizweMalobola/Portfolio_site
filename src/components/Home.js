@@ -25,6 +25,15 @@ const HOme = () => {
             </div>
           </div>
         </section>
+        <div className={styles["fixed-bottom"]}>
+          <a className={styles["envelope"]} href="/#">
+            M <span>contact me</span>
+          </a>
+          {/* this will stay hidden until the page has reached a certain point */}
+          <a className={styles["scroll-up"]} href="/#">
+            U
+          </a>
+        </div>
       </div>
     </>
   );
