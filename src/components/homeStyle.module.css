@@ -11,6 +11,8 @@
   --black-primary: black;
   --gray-primary: #8e8a8f;
 }
+/* home-top */
+
 .home-top {
   border: solid darkcyan 1px;
   width: 100%;
@@ -61,7 +63,9 @@
 .row span a:hover {
   text-decoration: underline;
 }
+
 /* fixed bottom */
+
 .fixed-bottom {
   position: fixed;
   bottom: 4%;
@@ -110,4 +114,11 @@
   width: auto;
   opacity: 1;
   margin-left: 10px;
+}
+
+/* projects section  */
+
+.projects {
+  width: 100%;
+  padding: 0 10rem;
 }
