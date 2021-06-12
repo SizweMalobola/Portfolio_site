@@ -35,7 +35,7 @@
 }
 .row h3 {
   font-size: 1.1rem;
-  font-weight: 500;
+  font-weight: 350;
   margin-bottom: 1.6rem;
   color: var(--gray-primary);
 }
@@ -121,4 +121,10 @@
 .projects {
   width: 100%;
   padding: 0 10rem;
+}
+.card-grid {
+  padding-top: 5rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
 }

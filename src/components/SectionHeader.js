@@ -6,7 +6,7 @@ function SectionHeader({ subtitle, title }) {
       <h3
         style={{
           fontSize: "1.1rem",
-          fontWeight: 500,
+          fontWeight: 350,
           marginBottom: "1.6rem",
           color: "#8e8a8f",
         }}
