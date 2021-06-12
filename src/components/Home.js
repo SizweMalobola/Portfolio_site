@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./homeStyle.module.css";
 import { TimelineLite } from "gsap/gsap-core";
 import SectionHeader from "./SectionHeader";
+import Card from "./Card";
 
 const HOme = () => {
   const animationTimeline = new TimelineLite({ paused: true });
@@ -41,6 +42,9 @@ const HOme = () => {
         {/* projects section */}
         <section className={styles["projects"]}>
           <SectionHeader title="Case studies" subtitle="Selected projects" />
+          <div className={styles["card-grid"]}>
+            <Card timeline="711" projectName="firstproject" imgURL={null} />
+          </div>
         </section>
       </div>
     </>
