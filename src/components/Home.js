@@ -47,25 +47,56 @@ const HOme = () => {
               timeline="2018 - 2019"
               projectName="Basic UX -- design resources for Virgin Studio"
               imgURL={null}
+              height={800}
+              more="View Case Study"
             />
             <Card
               timeline="2017"
               projectName="Tripo -- responsive eCommerce website design"
               imgURL={null}
+              height={800}
+              more="View Case Study"
             />
             <Card
               timeline="2017"
               projectName="Symbiyo -- responsive website design"
               imgURL={null}
+              height={800}
+              more="View Case Study"
             />
             <Card
               timeline="2016 - 2018"
               projectName="DVD -- online platform & website design"
               imgURL={null}
+              height={800}
+              more="View Case Study"
             />
           </div>
         </section>
         {/* personal projects section --add as coming soon */}
+        <section className={`${styles["projects"]} ${styles["in-progress"]}`}>
+          <SectionHeader
+            title="Coming soon"
+            subtitle="Projects I'm currently working on"
+          />
+          <div className={styles["card-grid"]}>
+            <Card
+              timeline="2021 - PRESENT"
+              projectName="Photo gallery -- design resources for Virgin Studio"
+              imgURL={null}
+              height={500}
+              more="View My Progress"
+            />
+            <Card
+              timeline="2021 - PRESENT"
+              projectName="Berserk Tribute -- responsive eCommerce website design"
+              imgURL={null}
+              height={500}
+              more="View My Progress"
+            />
+          </div>
+        </section>
+        {/* contact section */}
       </div>
     </>
   );

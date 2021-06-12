@@ -121,6 +121,7 @@
 .projects {
   width: 100%;
   padding: 0 10rem;
+  padding-bottom: 10rem;
 }
 .card-grid {
   padding-top: 5rem;
