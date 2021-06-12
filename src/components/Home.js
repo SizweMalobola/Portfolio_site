@@ -97,6 +97,13 @@ const HOme = () => {
           </div>
         </section>
         {/* contact section */}
+        <section className={styles["contact-me"]}>
+          <h3>NEED A WED DEVELOPER ?</h3>
+          <a href="/#">
+            <h1>Let's work together -{">"}</h1>
+          </a>
+        </section>
+        {/* footer */}
       </div>
     </>
   );

@@ -129,3 +129,29 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 4rem;
 }
+/* contact me section */
+.contact-me {
+  width: 100%;
+  padding: 0 10rem;
+  padding-bottom: 10rem;
+  text-align: center;
+}
+.contact-me h3 {
+  color: var(--gray-primary);
+  font-size: 1.1rem;
+  font-weight: 350;
+  letter-spacing: 2px;
+  margin-bottom: 1.1rem;
+}
+
+.contact-me a {
+  text-decoration: none;
+  color: var(--black-primary);
+  font-size: 2.4rem;
+  font-weight: 800;
+  margin-bottom: 1.1rem;
+  line-height: 2.6rem;
+}
+.contact-me a:hover {
+  text-decoration: underline;
+}
