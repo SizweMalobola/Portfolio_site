@@ -43,9 +43,29 @@ const HOme = () => {
         <section className={styles["projects"]}>
           <SectionHeader title="Case studies" subtitle="Selected projects" />
           <div className={styles["card-grid"]}>
-            <Card timeline="711" projectName="firstproject" imgURL={null} />
+            <Card
+              timeline="2018 - 2019"
+              projectName="Basic UX -- design resources for Virgin Studio"
+              imgURL={null}
+            />
+            <Card
+              timeline="2017"
+              projectName="Tripo -- responsive eCommerce website design"
+              imgURL={null}
+            />
+            <Card
+              timeline="2017"
+              projectName="Symbiyo -- responsive website design"
+              imgURL={null}
+            />
+            <Card
+              timeline="2016 - 2018"
+              projectName="DVD -- online platform & website design"
+              imgURL={null}
+            />
           </div>
         </section>
+        {/* personal projects section --add as coming soon */}
       </div>
     </>
   );

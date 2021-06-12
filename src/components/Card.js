@@ -3,7 +3,7 @@ import styles from "./cardStyle.module.css";
 
 function Card({ timeline, projectName, imgURL }) {
   return (
-    <a href="/#">
+    <a className={styles["container"]} href="/#">
       {/* add imgurl */}
       <div>
         <span>{timeline}</span>
