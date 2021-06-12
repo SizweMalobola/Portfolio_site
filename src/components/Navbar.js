@@ -7,7 +7,11 @@ function Navbar() {
   return (
     <nav className={styles["container"]}>
       <a href="/" className={styles["logo"]}>
-        LOGO
+        <span>
+          <b>S</b>
+          <b>M</b>
+        </span>
+        <span>Web Developer</span>
       </a>
       <div className={styles["menu"]}>
         <span className={styles["menu-text"]}>MENU</span>
