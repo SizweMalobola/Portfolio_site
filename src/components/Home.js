@@ -10,7 +10,7 @@ const Home = () => {
   const animationTimeline = new TimelineLite({ paused: true });
   return (
     <>
-      <div className={styles["container"]}>
+      <div id="top" className={styles["container"]}>
         {/* home top section */}
         <section className={styles["home-top"]}>
           <h1>web developer.</h1>
@@ -39,7 +39,7 @@ const Home = () => {
             M <span>contact me</span>
           </Link>
           {/* this will stay hidden until the page has reached a certain point */}
-          <a className={styles["scroll-up"]} href="/#">
+          <a className={styles["scroll-up"]} href="#top">
             U
           </a>
         </div>
