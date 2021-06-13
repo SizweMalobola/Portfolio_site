@@ -174,8 +174,8 @@ const Home = () => {
               <span>Web Developer</span>
             </Link>
             <div>
-              <span>&copy; 2021 Sizwe Malobola</span>
-              <span>Go forth be conquered</span>
+              <span>&copy; 2021 Sizwe Malobola.</span>
+              <span>Go forth be conquered.</span>
             </div>
           </div>
         </footer>
