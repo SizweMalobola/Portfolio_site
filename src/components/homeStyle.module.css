@@ -76,6 +76,7 @@
   justify-content: space-between;
   align-items: center;
   margin: 0 4rem;
+  z-index: 99;
 }
 .fixed-bottom a {
   text-decoration: none;
@@ -154,4 +155,118 @@
 }
 .contact-me a:hover {
   text-decoration: underline;
+}
+/* footer section */
+footer {
+  width: 100%;
+  padding: 0 10rem;
+  padding-bottom: 4rem;
+}
+.footer-top {
+  border-top: 1px solid var(--gray-primary);
+  display: flex;
+  padding-top: 4rem;
+}
+.footer-top div {
+  flex-grow: 1;
+}
+.footer-top div h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.contact-info {
+  width: 30%;
+  padding-right: 5rem;
+}
+.contact-info p {
+  color: var(--gray-primary);
+  font-size: 1rem;
+}
+.contact-info > p {
+  padding-bottom: 1rem;
+}
+
+.contact-info > div p {
+  line-height: 1.4rem;
+}
+.contact-info > div span {
+  color: var(--black-primary);
+}
+.contact-info > div p:first-child span:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.latest-project {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  padding-left: 5rem;
+}
+.latest-project a {
+  text-decoration: none;
+  color: var(--black-primary);
+  margin-bottom: 0.2rem;
+}
+.latest-project a:hover {
+  text-decoration: underline;
+}
+.current-availability {
+  width: 30%;
+  padding-right: 5rem;
+}
+.social-media {
+  padding-left: 5rem;
+  width: 20%;
+}
+.current-availability p {
+  color: var(--gray-primary);
+}
+/* footer bottom */
+.footer-bottom {
+  padding-top: 2rem;
+  display: flex;
+  align-items: center;
+  color: var(--gray-primary);
+}
+.footer-bottom > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* footer logo */
+.logo {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: var(--gray-primary);
+  align-items: center;
+}
+/* Todo add hover state to the logo */
+.logo span:first-child {
+  width: 55px;
+  height: 55px;
+  border: 4px solid var(--gray-primary);
+  padding: 2px;
+  position: relative;
+  display: flex;
+}
+.logo span:last-child {
+  padding-top: 2px;
+  font-size: 0.6rem;
+  font-weight: 600;
+}
+.logo span:first-child b {
+  flex-grow: 1;
+  font-size: 1.7rem;
+  font-stretch: expanded;
+}
+.logo span:first-child b:first-child {
+  align-self: flex-start;
+  text-align: right;
+}
+.logo span:first-child b:last-child {
+  align-self: flex-end;
+  text-align: left;
 }
