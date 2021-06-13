@@ -1,10 +1,12 @@
 import React from "react";
 import styles from "./homeStyle.module.css";
 import { TimelineLite } from "gsap/gsap-core";
+import { Link } from "react-router-dom";
+
 import SectionHeader from "./SectionHeader";
 import Card from "./Card";
 
-const HOme = () => {
+const Home = () => {
   const animationTimeline = new TimelineLite({ paused: true });
   return (
     <>
@@ -12,6 +14,7 @@ const HOme = () => {
         {/* home top section */}
         <section className={styles["home-top"]}>
           <h1>web developer.</h1>
+
           <div className={styles["intro-div"]}>
             <div className={styles["row"]}>
               {/* I might replace this with the section header component */}
@@ -24,16 +27,17 @@ const HOme = () => {
                 persevered. This is how badly I want to write code for a living.
               </p>
               <span>
-                <a href="/#">View Projects</a> or <a href="/#">Read About Me</a>
+                <a href="/#">View Projects</a> or{" "}
+                <Link to="/about">Read About Me</Link>
               </span>
             </div>
           </div>
         </section>
         {/* fixed bottom section */}
         <div className={styles["fixed-bottom"]}>
-          <a className={styles["envelope"]} href="/#">
+          <Link to="/contact" className={styles["envelope"]}>
             M <span>contact me</span>
-          </a>
+          </Link>
           {/* this will stay hidden until the page has reached a certain point */}
           <a className={styles["scroll-up"]} href="/#">
             U
@@ -49,6 +53,7 @@ const HOme = () => {
               imgURL={null}
               height={800}
               more="View Case Study"
+              id="1"
             />
             <Card
               timeline="2017"
@@ -56,6 +61,7 @@ const HOme = () => {
               imgURL={null}
               height={800}
               more="View Case Study"
+              id="2"
             />
             <Card
               timeline="2017"
@@ -63,6 +69,7 @@ const HOme = () => {
               imgURL={null}
               height={800}
               more="View Case Study"
+              id="3"
             />
             <Card
               timeline="2016 - 2018"
@@ -70,6 +77,7 @@ const HOme = () => {
               imgURL={null}
               height={800}
               more="View Case Study"
+              id="4"
             />
           </div>
         </section>
@@ -86,6 +94,7 @@ const HOme = () => {
               imgURL={null}
               height={500}
               more="View My Progress"
+              id="5"
             />
             <Card
               timeline="2021 - PRESENT"
@@ -93,15 +102,16 @@ const HOme = () => {
               imgURL={null}
               height={500}
               more="View My Progress"
+              id="6"
             />
           </div>
         </section>
         {/* contact section */}
         <section className={styles["contact-me"]}>
           <h3>NEED A WED DEVELOPER ?</h3>
-          <a href="/#">
+          <Link to="/contact">
             <h1>Let's work together -{">"}</h1>
-          </a>
+          </Link>
         </section>
         {/* footer */}
         <footer>
@@ -156,13 +166,13 @@ const HOme = () => {
             </div>
           </div>
           <div className={styles["footer-bottom"]}>
-            <a className={styles["logo"]} href="/#">
+            <Link to="/" className={styles["logo"]}>
               <span>
                 <b>S</b>
                 <b>M</b>
               </span>
               <span>Web Developer</span>
-            </a>
+            </Link>
             <div>
               <span>&copy; 2021 Sizwe Malobola</span>
               <span>Go forth be conquered</span>
@@ -174,4 +184,4 @@ const HOme = () => {
   );
 };
 
-export default HOme;
+export default Home;

@@ -1,9 +1,11 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styles from "./cardStyle.module.css";
 
-function Card({ timeline, projectName, imgURL, height, more }) {
+function Card({ timeline, projectName, imgURL, height, more, id }) {
   return (
-    <a
+    <Link
+      to={`/projects/${id}`}
       style={{ height: `${height}px` }}
       className={styles["container"]}
       href="/#"
@@ -16,7 +18,7 @@ function Card({ timeline, projectName, imgURL, height, more }) {
           {more} -{">"}
         </span>
       </div>
-    </a>
+    </Link>
   );
 }
 
