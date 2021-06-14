@@ -4,6 +4,7 @@ import { TimelineLite } from "gsap/gsap-core";
 import { Link } from "react-router-dom";
 import SectionHeader from "./SectionHeader";
 import Card from "./Card";
+import Footer from "./Footer";
 
 const Home = () => {
   const animationTimeline = new TimelineLite({ paused: true });
@@ -103,6 +104,7 @@ const Home = () => {
           </Link>
         </section>
         {/* footer */}
+        <Footer />
       </div>
     </>
   );
