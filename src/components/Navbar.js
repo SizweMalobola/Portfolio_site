@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./navbarStyle.module.css";
 import { TimelineLite } from "gsap/gsap-core";
 import { Link } from "react-router-dom";
@@ -10,6 +10,14 @@ function Navbar() {
   const clickHandler = () => {
     showModal ? setShowModal(false) : setShowModal(true);
   };
+  // when modal is open body overflow will be set to hidden
+  //! fix change in width then scrollbar-y is removed
+  useEffect(() => {
+    const bodyElement = document.querySelector("body");
+    showModal
+      ? bodyElement.classList.toggle(styles["modal-open"], true)
+      : bodyElement.classList.toggle(styles["modal-open"], false);
+  }, [showModal]);
   return (
     <>
       <nav className={styles["container"]}>

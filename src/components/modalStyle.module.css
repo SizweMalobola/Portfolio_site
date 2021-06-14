@@ -1,12 +1,11 @@
-/* Todo make modal cover the whole screen without having y-scroll */
 .container {
-  position: absolute;
+  position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
   z-index: 100;
-  color: crimson;
+  color: var(--gray-primary);
   background-color: #0f141e;
   display: flex;
   flex-direction: column;
