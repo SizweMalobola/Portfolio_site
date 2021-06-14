@@ -33,16 +33,6 @@ const Home = () => {
             </div>
           </div>
         </section>
-        {/* fixed bottom section */}
-        <div className={styles["fixed-bottom"]}>
-          <Link to="/contact" className={styles["envelope"]}>
-            M <span>contact me</span>
-          </Link>
-          {/* this will stay hidden until the page has reached a certain point */}
-          <a className={styles["scroll-up"]} href="#top">
-            U
-          </a>
-        </div>
         {/* projects section */}
         <section className={styles["projects"]}>
           <SectionHeader title="Case studies" subtitle="Selected projects" />

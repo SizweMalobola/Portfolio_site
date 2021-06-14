@@ -64,59 +64,6 @@
   text-decoration: underline;
 }
 
-/* fixed bottom */
-
-.fixed-bottom {
-  position: fixed;
-  bottom: 4%;
-  left: 0;
-  right: 0;
-  border: solid 1px black;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0 4rem;
-  z-index: 99;
-}
-.fixed-bottom a {
-  text-decoration: none;
-  width: 46px;
-  height: 46px;
-  background-color: var(--gray-primary);
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 23px;
-  transition: all 0.2s linear;
-}
-.fixed-bottom a:hover {
-  background-color: #0f141e;
-}
-.envelope:hover {
-  width: 130px;
-  justify-content: flex-start;
-  padding: 20px;
-}
-.envelope span {
-  width: 0;
-  display: block;
-  overflow: hidden;
-  font-size: 0.8rem;
-  line-height: 1.25rem;
-  font-weight: 500;
-  color: white;
-  opacity: 0;
-  margin-top: 1px;
-  transition: all 0.2s 0.2s linear;
-}
-
-.envelope:hover span {
-  width: auto;
-  opacity: 1;
-  margin-left: 10px;
-}
-
 /* projects section  */
 
 .projects {
