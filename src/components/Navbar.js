@@ -50,7 +50,7 @@ function Navbar() {
           </b>
         </div>
       </nav>
-      {showModal ? <ModalPortal /> : null}
+      {showModal ? <ModalPortal closeModal={clickHandler} /> : null}
     </>
   );
 }
