@@ -5,7 +5,7 @@ import Navbar from "./components/Navbar";
 import About from "./components/About";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
-import FixedBottom from "./FixedBottom";
+import FixedBottom from "./components/FixedBottom";
 
 function App() {
   return (
