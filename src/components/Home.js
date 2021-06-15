@@ -10,7 +10,7 @@ const Home = () => {
   const animationTimeline = new TimelineLite({ paused: true });
   return (
     <>
-      <div id="top" className={styles["container"]}>
+      <div className={styles["container"]}>
         {/* home top section */}
         <section className={styles["home-top"]}>
           <h1>web developer.</h1>
@@ -18,7 +18,7 @@ const Home = () => {
           <div className={styles["intro-div"]}>
             <div className={styles["row"]}>
               {/* I might replace this with the section header component */}
-              <h3>VICTOR VON DOOM</h3>
+              <h3>SIZWE MALOBOLA</h3>
               <h1>Self taught web developer</h1>
               <p>
                 It was late 2019 that I decided to pursue a career in the

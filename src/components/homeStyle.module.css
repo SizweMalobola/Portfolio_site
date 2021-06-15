@@ -1,6 +1,5 @@
 .container {
   position: relative;
-  /* border: solid burlywood 1px; */
   padding-top: 10rem;
   width: 100%;
   display: flex;
@@ -14,7 +13,6 @@
 /* home-top */
 
 .home-top {
-  border: solid darkcyan 1px;
   width: 100%;
   height: 90vh;
   position: relative;
@@ -36,6 +34,7 @@
 .row h3 {
   font-size: 1.1rem;
   font-weight: 350;
+  letter-spacing: 4px;
   margin-bottom: 1.6rem;
   color: var(--gray-primary);
 }
