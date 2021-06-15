@@ -1,16 +1,8 @@
-.container {
+.logo {
   position: fixed;
   top: 4%;
-  left: 0;
-  right: 0;
-  border: solid 1px black;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0 4rem;
+  left: 4rem;
   z-index: 101;
-}
-.logo {
   display: flex;
   flex-direction: column;
   text-decoration: none;
@@ -45,6 +37,10 @@
   text-align: left;
 }
 .menu {
+  position: fixed;
+  top: 4%;
+  right: 4rem;
+  z-index: 101;
   display: flex;
   justify-content: center;
   align-items: center;
