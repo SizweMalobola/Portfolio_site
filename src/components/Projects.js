@@ -41,9 +41,16 @@ function Projects({ match }) {
             elements. You can easily customize and combine them when working on
             your wireframes.
           </p>
+          <p>
+            Aside from that, I was in touch with the Director of Product and the
+            InVision tech team to report issues and bugs that I found within the
+            software, as well as to propose improvements regarding certain
+            functionalities. It was exciting to see how the product evolved and
+            improved with each update during this short time.
+          </p>
         </div>
       </div>
-      <div className={styles["images-grid"]}>
+      <div className={styles["images-container"]}>
         <div className={styles["image"]}></div>
         <div className={styles["image"]}></div>
         <div className={styles["image"]}></div>
