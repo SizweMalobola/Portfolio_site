@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./contactStyle.module.css";
+import Footer from "./Footer";
 
 function Contact() {
   return (
@@ -32,6 +33,48 @@ function Contact() {
           </div>
         </div>
       </div>
+      <div className={styles["contact-info"]}>
+        <div className={styles["left"]}>
+          <h3>CONTACT</h3>
+          <h2>Get in touch - let's work together.</h2>
+        </div>
+        <div className={styles["right"]}>
+          <p>
+            Got a project? Drop me a line if you want to work together on
+            something exciting. Big or small. Mobile or web.
+          </p>
+          <form>
+            <div className={styles["input-div"]}>
+              <label htmlFor="#name">Your Name</label>
+              <input id="name" type="text" />
+            </div>
+            <div className={styles["input-div"]}>
+              <label htmlFor="#email">Your Email</label>
+              <input id="email" type="email" />
+            </div>
+            <div className={styles["input-div"]}>
+              <label htmlFor="#dropdown1">Dropdown 1</label>
+              <select id="dropdown1">
+                <option>this</option>
+                <option>that</option>
+              </select>
+            </div>
+            <div className={styles["input-div"]}>
+              <label htmlFor="#dropdown2">Dropdown 2</label>
+              <select id="dropdown2">
+                <option>that</option>
+                <option>this</option>
+              </select>
+            </div>
+            <div className={styles["input-div"]}>
+              <label for="#message">Message</label>
+              <input type="text" />
+            </div>
+            <button className={styles["button"]}>Send message</button>
+          </form>
+        </div>
+      </div>
+      <Footer />
     </div>
   );
 }
