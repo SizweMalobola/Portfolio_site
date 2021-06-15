@@ -1,0 +1,47 @@
+.container {
+  position: relative;
+  /* border: solid burlywood 1px; */
+  padding-top: 10rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* color var */
+  --black-primary: black;
+  --gray-primary: #8e8a8f;
+}
+.contact-top {
+  width: 100%;
+  height: 550px;
+  border: 1px solid brown;
+}
+.map {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 2rem 0;
+}
+.map iframe {
+  height: 100%;
+  width: 80%;
+  border: none;
+}
+.letters-grid {
+  position: absolute;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  top: 0;
+  bottom: 0;
+  right: 15rem;
+  gap: 2rem 3rem;
+}
+.letter {
+  font-size: 5rem;
+  font-weight: 700;
+  border: 1px solid blueviolet;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--gray-primary);
+}
