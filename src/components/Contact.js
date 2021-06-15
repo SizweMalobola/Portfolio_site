@@ -10,7 +10,7 @@ function Contact() {
           <iframe
             title="map"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1864263.8401115676!2d25.854856614886504!3d-24.131710078219147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1eeab287cfbe2fa3%3A0x51044edbf66e6a3!2sBronkhorstspruit!5e0!3m2!1sen!2sza!4v1623752436625!5m2!1sen!2sza"
-            allowfullscreen=""
+            allowFullScreen=""
             loading="lazy"
           ></iframe>
           <div className={styles["letters-grid"]}>
@@ -46,15 +46,20 @@ function Contact() {
           <form>
             <div className={styles["input-div"]}>
               <label htmlFor="#name">Your Name</label>
-              <input id="name" type="text" />
+              <input id="name" type="text" placeholder="What's your name?" />
             </div>
             <div className={styles["input-div"]}>
               <label htmlFor="#email">Your Email</label>
-              <input id="email" type="email" />
+              <input
+                id="email"
+                type="email"
+                placeholder="What's your email address?"
+              />
             </div>
             <div className={styles["input-div"]}>
               <label htmlFor="#dropdown1">Dropdown 1</label>
               <select id="dropdown1">
+                <option selected>Choose this or that</option>
                 <option>this</option>
                 <option>that</option>
               </select>
@@ -62,13 +67,18 @@ function Contact() {
             <div className={styles["input-div"]}>
               <label htmlFor="#dropdown2">Dropdown 2</label>
               <select id="dropdown2">
+                <option>Choose that or this</option>
                 <option>that</option>
                 <option>this</option>
               </select>
             </div>
             <div className={styles["input-div"]}>
-              <label for="#message">Message</label>
-              <input type="text" />
+              <label htmlFor="#message">Message</label>
+              <input
+                id="message"
+                type="text"
+                placeholder="What's your message?"
+              />
             </div>
             <button className={styles["button"]}>Send message</button>
           </form>

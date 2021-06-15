@@ -14,7 +14,6 @@
 .contact-top {
   width: 100%;
   height: 550px;
-  border: 1px solid brown;
 }
 .map {
   position: relative;
@@ -39,7 +38,6 @@
 .letter {
   font-size: 5rem;
   font-weight: 700;
-  border: 1px solid blueviolet;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -47,7 +45,7 @@
 }
 
 /* contact info*/
-
+/* left */
 .contact-info {
   width: 100%;
   padding: 5rem 10rem;
@@ -68,4 +66,44 @@
   color: var(--black-primary);
   font-size: 2.4rem;
   font-weight: 800;
+}
+/* right */
+.right p {
+  font-size: 1.3rem;
+  color: var(--gray-primary);
+  margin-bottom: 2rem;
+}
+.right form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+.input-div {
+  display: flex;
+  flex-direction: column;
+}
+.input-div label {
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  color: var(--gray-primary);
+}
+.input-div input,
+.input-div select {
+  padding: 10px;
+  font-size: 1rem;
+}
+.input-div input {
+  border: none;
+  border-bottom: 1px solid var(--gray-primary);
+}
+.input-div input:focus {
+  outline: none;
+}
+.input-div select {
+  border: 1px solid var(--gray-primary);
+  border-radius: 4px;
+  background-color: #fff;
+}
+/* Todo make the last div span a whole row */
+.right form div:nth-child(5) {
 }
