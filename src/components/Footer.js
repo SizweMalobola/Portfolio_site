@@ -7,9 +7,7 @@ function Footer() {
     <footer>
       <div className={styles["footer-top"]}>
         <div className={styles["contact-info"]}>
-          <h3>
-            Contact <br /> information --
-          </h3>
+          <h3>Contact information --</h3>
           <p>
             Feel free to reach out to me any time. I prefer to talk over email,
             especially since we may be a few time zones away.
@@ -24,11 +22,7 @@ function Footer() {
           </div>
         </div>
         <div className={styles["latest-project"]}>
-          <h3>
-            Latest
-            <br />
-            projects -
-          </h3>
+          <h3>Latest projects -</h3>
           <a href="/#">Iceland</a>
           <a href="/#">Basic UX</a>
           <a href="/#">Triniso</a>
@@ -37,22 +31,14 @@ function Footer() {
           <a href="/#">All projects</a>
         </div>
         <div className={styles["current-availability"]}>
-          <h3>
-            Current
-            <br />
-            availability -
-          </h3>
+          <h3>Current availability -</h3>
           <p>
             I usually work on several projects but I’ll be happy to discuss new
             opportunities. Let’s get in touch!
           </p>
         </div>
         <div className={styles["social-media"]}>
-          <h3>
-            Follow
-            <br />
-            me on -
-          </h3>
+          <h3>Follow me on -</h3>
         </div>
       </div>
       <div className={styles["footer-bottom"]}>

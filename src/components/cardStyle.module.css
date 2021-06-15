@@ -36,3 +36,27 @@
   font-size: 1.1rem;
   font-weight: 400;
 }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .container div {
+    width: 80%;
+    top: 2rem;
+    left: 2rem;
+  }
+  .container span:first-child {
+    font-size: 1rem;
+    font-weight: 350;
+    letter-spacing: 2px;
+    margin-bottom: 0.7rem;
+  }
+  .container h2 {
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 0.7rem;
+    line-height: normal;
+  }
+  .container span:last-child {
+    display: none;
+  }
+}
