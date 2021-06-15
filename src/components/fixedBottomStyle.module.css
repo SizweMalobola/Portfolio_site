@@ -1,17 +1,17 @@
-.fixed-bottom {
+.envelope {
   position: fixed;
   bottom: 4%;
-  left: 0;
-  right: 0;
-  border: solid 1px black;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0 4rem;
+  left: 4rem;
   z-index: 99;
-  --gray-primary: #8e8a8f;
 }
-.fixed-bottom a {
+.scroll-up {
+  position: fixed;
+  bottom: 4%;
+  right: 4rem;
+  z-index: 99;
+}
+.envelope,
+.scroll-up {
   text-decoration: none;
   width: 46px;
   height: 46px;
@@ -23,7 +23,8 @@
   border-radius: 23px;
   transition: all 0.2s linear;
 }
-.fixed-bottom a:hover {
+.envelope,
+.scroll-up {
   background-color: #0f141e;
 }
 .envelope:hover {
