@@ -14,6 +14,7 @@
   font-weight: 350;
   margin-bottom: 1.6rem;
   color: var(--gray-primary);
+  letter-spacing: 2px;
 }
 .title {
   color: var(--black-primary);
@@ -44,4 +45,39 @@
 }
 .stack-grid div {
   background-color: gray;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .container {
+    padding-top: 8rem;
+    align-items: flex-start;
+  }
+  .subtitle {
+    font-size: 1.1rem;
+    margin-bottom: 0.7rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .title {
+    font-size: 2.2rem;
+    line-height: normal;
+    margin-bottom: 0.7rem;
+    width: 100%;
+    text-align: left;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .content {
+    font-size: 1.1rem;
+    line-height: normal;
+    margin-bottom: 0.7rem;
+    font-weight: 600;
+    text-align: left;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .stack-grid {
+    padding: 3rem 1rem;
+  }
 }
