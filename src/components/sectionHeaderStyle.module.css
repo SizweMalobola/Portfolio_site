@@ -24,3 +24,16 @@
     margin-bottom: 0.7rem;
   }
 }
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 601px) {
+  .subtitle {
+    font-size: 1.1rem;
+    margin-bottom: 0.7rem;
+  }
+  .title {
+    font-size: 2.2rem;
+    line-height: normal;
+    margin-bottom: 0.7rem;
+  }
+}

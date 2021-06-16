@@ -145,3 +145,36 @@ footer {
     margin-bottom: 1.5rem;
   }
 }
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 601px) {
+  footer {
+    width: 100%;
+    padding: 0 1rem;
+    padding-bottom: 4rem;
+  }
+  .footer-top {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-info {
+    width: 100%;
+    padding-right: 0;
+    margin-bottom: 1.5rem;
+  }
+  .latest-project {
+    width: 100%;
+    padding-left: 0;
+    margin-bottom: 1.5rem;
+  }
+  .current-availability {
+    width: 100%;
+    padding-right: 0;
+    margin-bottom: 1.5rem;
+  }
+  .social-media {
+    padding-left: 0;
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+}
