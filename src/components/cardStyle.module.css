@@ -84,3 +84,10 @@
     display: none;
   }
 }
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 740px) {
+  .container {
+    height: 600px !important;
+  }
+}

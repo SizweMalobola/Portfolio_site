@@ -234,3 +234,54 @@
     line-height: 2.6rem;
   }
 }
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 740px) {
+  .container {
+    padding-top: 15rem;
+  }
+  .home-top {
+    height: 70vh;
+  }
+  .intro-div {
+    left: 2rem;
+  }
+  .row {
+    width: 65%;
+  }
+  .row h3 {
+    font-size: 1.1rem;
+    margin-bottom: 1.3rem;
+  }
+  .row h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1.3rem;
+  }
+  .row p {
+    font-size: 1.4rem;
+    font-weight: 550;
+  }
+  .row span {
+    font-size: 1.4rem;
+  }
+  .projects {
+    padding: 0 2rem;
+    padding-bottom: 10rem;
+  }
+  .card-grid {
+    padding-top: 5rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .contact-me {
+    padding: 0 2rem;
+    padding-bottom: 10rem;
+    text-align: center;
+  }
+  .contact-me h3 {
+    margin-bottom: 1.3rem;
+  }
+  .contact-me a {
+    font-size: 2.4rem;
+    margin-bottom: 1.3rem;
+  }
+}
