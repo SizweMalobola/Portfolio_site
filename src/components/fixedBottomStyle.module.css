@@ -15,7 +15,7 @@
   text-decoration: none;
   width: 46px;
   height: 46px;
-  background-color: var(--gray-primary);
+  background-color: #8e8a8f;
   color: white;
   display: flex;
   justify-content: center;
@@ -23,8 +23,8 @@
   border-radius: 23px;
   transition: all 0.2s linear;
 }
-.envelope,
-.scroll-up {
+.envelope:hover,
+.scroll-up:hover {
   background-color: #0f141e;
 }
 .envelope:hover {
