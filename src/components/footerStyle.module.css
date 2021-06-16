@@ -178,3 +178,21 @@ footer {
     margin-bottom: 1.5rem;
   }
 }
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 740px) {
+  footer {
+    padding: 0 2rem;
+  }
+  .footer-top {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .contact-info {
+    grid-column: 1/4;
+  }
+  .contact-info div {
+    align-self: flex-start;
+    width: 50%;
+  }
+}
