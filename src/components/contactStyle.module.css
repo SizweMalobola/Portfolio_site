@@ -260,3 +260,13 @@
     font-weight: 550;
   }
 }
+
+@media only screen and (min-width: 780px) {
+  .right form {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .button {
+    width: 100%;
+    align-self: flex-end;
+  }
+}
