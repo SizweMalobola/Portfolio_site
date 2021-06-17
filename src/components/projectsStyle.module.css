@@ -23,6 +23,7 @@
   font-size: 1rem;
   font-weight: 350;
   margin-bottom: 1rem;
+  letter-spacing: 2px;
   color: var(--gray-primary);
 }
 .title {
@@ -150,5 +151,36 @@
   }
   .images-container {
     padding: 3rem 1rem;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 740px) {
+  .container {
+    padding-top: 10rem;
+  }
+  .project {
+    padding: 0 2rem;
+  }
+  .project-overview {
+    width: 80%;
+  }
+  .subtitle {
+    margin-bottom: 1rem;
+  }
+  .title {
+    font-size: 2.4rem;
+  }
+  .list li {
+    font-size: 1rem;
+  }
+  .project-details {
+    width: 80%;
+  }
+  .project-details p {
+    font-size: 1.3rem;
+  }
+  .images-container {
+    padding: 4rem 2rem;
   }
 }
