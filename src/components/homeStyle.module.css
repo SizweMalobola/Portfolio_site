@@ -241,9 +241,10 @@
     padding-top: 15rem;
   }
   .home-top {
-    height: 70vh;
+    height: 75vh;
   }
   .intro-div {
+    position: absolute;
     left: 2rem;
   }
   .row {
@@ -283,5 +284,38 @@
   .contact-me a {
     font-size: 2.4rem;
     margin-bottom: 1.3rem;
+  }
+}
+
+@media only screen and (min-width: 780px) {
+  .container {
+    padding-top: 10rem;
+  }
+  .intro-div {
+    top: 10rem;
+  }
+  .home-top {
+    height: 80vh;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .intro-div {
+    top: 12rem;
+  }
+  .home-top > h1 {
+    display: block;
+    font-size: 8.9rem;
+    padding: 0 2rem;
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 1327px) {
+  .intro-div {
+    top: 15rem;
+  }
+  .home-top > h1 {
+    font-size: 12rem;
   }
 }
