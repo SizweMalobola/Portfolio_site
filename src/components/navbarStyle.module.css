@@ -1,7 +1,7 @@
 .logo {
   position: fixed;
   top: 4%;
-  left: 4rem;
+  left: 2%;
   z-index: 101;
   display: flex;
   flex-direction: column;
@@ -39,7 +39,7 @@
 .menu {
   position: fixed;
   top: 5.2%;
-  right: 4rem;
+  right: 2%;
   z-index: 101;
   display: flex;
   justify-content: center;
