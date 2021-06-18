@@ -12,12 +12,10 @@ const Home = () => {
     <>
       <div className={styles["container"]}>
         {/* home top section */}
+        <h1 className={styles["showcase"]}>web developer.</h1>
         <section className={styles["home-top"]}>
-          <h1>web developer.</h1>
-
           <div className={styles["intro-div"]}>
             <div className={styles["row"]}>
-              {/* I might replace this with the section header component */}
               <h3>SIZWE MALOBOLA</h3>
               <h1>Self taught web developer</h1>
               <p>
@@ -100,7 +98,7 @@ const Home = () => {
         <section className={styles["contact-me"]}>
           <h3>NEED A WED DEVELOPER ?</h3>
           <Link to="/contact">
-            <h1>Let's work together -{">"}</h1>
+            <h1>Let's work together</h1>
           </Link>
         </section>
         {/* footer */}
