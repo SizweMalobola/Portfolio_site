@@ -1,13 +1,13 @@
 .envelope {
   position: fixed;
   bottom: 4%;
-  left: 4rem;
+  left: 2%;
   z-index: 99;
 }
 .scroll-up {
   position: fixed;
   bottom: 4%;
-  right: 4rem;
+  right: 2%;
   z-index: 99;
 }
 .envelope,
