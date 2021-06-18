@@ -7,11 +7,13 @@ function Footer() {
     <footer>
       <div className={styles["footer-top"]}>
         <div className={styles["contact-info"]}>
-          <h3>Contact information --</h3>
-          <p>
-            Feel free to reach out to me any time. I prefer to talk over email,
-            especially since we may be a few time zones away.
-          </p>
+          <div>
+            <h3>Contact information --</h3>
+            <p>
+              Feel free to reach out to me any time. I prefer to talk over
+              email, especially since we may be a few time zones away.
+            </p>
+          </div>
           <div>
             <p>
               E: <span>scjmalobola@gmail.com</span>

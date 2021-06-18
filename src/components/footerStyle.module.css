@@ -1,48 +1,50 @@
 /* footer section */
 footer {
-  width: 100%;
-  padding: 0 10rem;
-  padding-bottom: 4rem;
+  width: 85%;
+  margin-bottom: 5rem;
   --black-primary: black;
   --gray-primary: #8e8a8f;
 }
 .footer-top {
   border-top: 1px solid var(--gray-primary);
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: end;
+  align-items: start;
   padding-top: 4rem;
 }
 .footer-top div h3 {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   font-weight: 700;
   margin-bottom: 1rem;
   color: var(--black-primary);
 }
 .contact-info {
-  width: 30%;
+  width: 100%;
   padding-right: 5rem;
 }
 .contact-info p {
   color: var(--gray-primary);
   font-size: 1rem;
 }
-.contact-info > p {
+.contact-info div:first-child p {
   padding-bottom: 1rem;
 }
 
-.contact-info > div p {
+.contact-info div:last-child p {
   line-height: 1.4rem;
 }
-.contact-info > div span {
+.contact-info div:last-child span {
   color: var(--black-primary);
 }
-.contact-info > div p:first-child span:hover {
+.contact-info div:last-child p:first-child span:hover {
   cursor: pointer;
   text-decoration: underline;
 }
 .latest-project {
   display: flex;
   flex-direction: column;
-  width: 20%;
+  width: 100%;
   padding-left: 5rem;
 }
 .latest-project a {
@@ -54,12 +56,12 @@ footer {
   text-decoration: underline;
 }
 .current-availability {
-  width: 30%;
+  width: 100%;
   padding-right: 5rem;
 }
 .social-media {
-  padding-left: 5rem;
-  width: 20%;
+  /* padding-left: 5rem; */
+  width: 100%;
 }
 .current-availability p {
   color: var(--gray-primary);
@@ -85,7 +87,7 @@ footer {
   color: var(--gray-primary);
   align-items: center;
 }
-/* Todo add hover state to the logo */
+
 .logo span:first-child {
   width: 55px;
   height: 55px;
@@ -113,87 +115,77 @@ footer {
   text-align: left;
 }
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+@media screen and (max-width: 1595px) {
   footer {
-    width: 100%;
-    padding: 0 1rem;
-    padding-bottom: 4rem;
-  }
-  .footer-top {
-    display: flex;
-    flex-direction: column;
-  }
-  .contact-info {
-    width: 100%;
-    padding-right: 0;
-    margin-bottom: 1.5rem;
-  }
-  .latest-project {
-    width: 100%;
-    padding-left: 0;
-    margin-bottom: 1.5rem;
-  }
-  .current-availability {
-    width: 100%;
-    padding-right: 0;
-    margin-bottom: 1.5rem;
-  }
-  .social-media {
-    padding-left: 0;
-    width: 100%;
-    margin-bottom: 1.5rem;
+    width: 95%;
   }
 }
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 601px) {
-  footer {
-    width: 100%;
-    padding: 0 1rem;
-    padding-bottom: 4rem;
-  }
-  .footer-top {
-    display: flex;
-    flex-direction: column;
-  }
-  .contact-info {
-    width: 100%;
-    padding-right: 0;
-    margin-bottom: 1.5rem;
-  }
-  .latest-project {
-    width: 100%;
-    padding-left: 0;
-    margin-bottom: 1.5rem;
-  }
-  .current-availability {
-    width: 100%;
-    padding-right: 0;
-    margin-bottom: 1.5rem;
-  }
-  .social-media {
-    padding-left: 0;
-    width: 100%;
-    margin-bottom: 1.5rem;
-  }
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 740px) {
-  footer {
-    padding: 0 2rem;
-    padding-bottom: 4rem;
-  }
+@media screen and (max-width: 1455px) {
   .footer-top {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 1.6rem;
+  }
+  .contact-info .contact-info div:first-child {
+    width: 50%;
+  }
+  .contact-info div:first-child p {
+    padding-bottom: 0;
+    width: 90%;
+    /* remember to 1rem when you stack these elements again */
+  }
+  .contact-info div:last-child {
+    width: 50%;
+    flex-grow: 2;
   }
   .contact-info {
     grid-column: 1/4;
+    display: flex;
+    align-items: flex-end;
   }
-  .contact-info div {
+  .latest-project {
+    padding-left: 0;
+  }
+}
+@media screen and (max-width: 1385px) {
+  footer {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 815px) {
+  .footer-top {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-info {
+    flex-direction: column;
+    width: 100%;
+    padding-right: 0;
+    margin-bottom: 1.5rem;
+  }
+  .contact-info div:first-child {
+    width: 100%;
+  }
+  .contact-info div:first-child p {
+    padding-bottom: 1rem;
+    width: 90%;
+  }
+  .contact-info div:last-child {
     align-self: flex-start;
-    width: 50%;
+  }
+  .latest-project {
+    width: 100%;
+    padding-left: 0;
+    margin-bottom: 1.5rem;
+  }
+  .current-availability {
+    width: 100%;
+    padding-right: 0;
+    margin-bottom: 1.5rem;
+  }
+  .social-media {
+    padding-left: 0;
+    width: 100%;
+    margin-bottom: 1.5rem;
   }
 }
