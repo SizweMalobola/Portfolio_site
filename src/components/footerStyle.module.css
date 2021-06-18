@@ -117,7 +117,7 @@ footer {
 
 @media screen and (max-width: 1595px) {
   footer {
-    width: 95%;
+    width: 90%;
   }
 }
 @media screen and (max-width: 1455px) {
@@ -149,7 +149,7 @@ footer {
 }
 @media screen and (max-width: 1385px) {
   footer {
-    width: 90%;
+    width: 95%;
   }
 }
 @media screen and (max-width: 815px) {
