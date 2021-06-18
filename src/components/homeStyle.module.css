@@ -12,21 +12,19 @@
 }
 /* home-top */
 
-.home-top {
-  width: 100%;
-  height: 90vh;
-  position: relative;
-}
-.home-top > h1 {
+.showcase {
   font-size: 17rem;
   font-weight: 600;
   color: white;
   text-shadow: whitesmoke 5px 5px 5px;
+  text-align: center;
+}
+.home-top {
+  width: 85%;
 }
 .intro-div {
-  position: absolute;
-  left: 10rem;
-  top: 280px;
+  width: 100%;
+  margin-bottom: 10rem;
 }
 .row {
   width: 40%;
@@ -66,9 +64,8 @@
 /* projects section  */
 
 .projects {
-  width: 100%;
-  padding: 0 10rem;
-  padding-bottom: 10rem;
+  width: 85%;
+  margin-bottom: 10rem;
 }
 .card-grid {
   padding-top: 5rem;
@@ -78,9 +75,8 @@
 }
 /* contact me section */
 .contact-me {
-  width: 100%;
-  padding: 0 10rem;
-  padding-bottom: 10rem;
+  width: 85%;
+  margin-bottom: 10rem;
   text-align: center;
 }
 .contact-me h3 {
@@ -88,164 +84,101 @@
   font-size: 1.1rem;
   font-weight: 350;
   letter-spacing: 2px;
-  margin-bottom: 1.1rem;
+  margin-bottom: 1.6rem;
 }
 
 .contact-me a {
   text-decoration: none;
   color: var(--black-primary);
-  font-size: 2.4rem;
+  font-size: 3rem;
   font-weight: 800;
-  margin-bottom: 1.1rem;
-  line-height: 2.6rem;
 }
 .contact-me a:hover {
   text-decoration: underline;
 }
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-  .container {
-    padding-top: 8rem;
+@media screen and (max-width: 1810px) {
+  .showcase {
+    font-size: 16rem;
   }
-  .home-top {
-    height: auto;
-    padding-bottom: 5rem;
+}
+@media screen and (max-width: 1699px) {
+  .showcase {
+    font-size: 15rem;
   }
-  .home-top > h1 {
-    display: none;
-    height: auto;
+}
+@media screen and (max-width: 1595px) {
+  .showcase {
+    font-size: 14rem;
   }
-  .intro-div {
-    position: relative;
-    top: 0;
-    left: 1rem;
-  }
-  .row {
-    width: 70%;
-  }
-  .row h3 {
-    font-size: 1.1rem;
-    margin-bottom: 0.7rem;
-  }
-  .row h1 {
-    font-size: 2.2rem;
-    line-height: normal;
-    margin-bottom: 0.7rem;
-  }
-  .row p {
-    font-size: 1.1rem;
-    font-weight: 600;
-  }
-  .row span {
-    font-size: 1.1rem;
-    font-weight: 600;
-  }
-  /* projects */
-  .projects {
-    padding: 0 1rem;
-    padding-bottom: 5rem;
-  }
-  .card-grid {
-    padding-top: 3.5rem;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 2rem;
-  }
-  /* contact-me */
+  .home-top,
+  .projects,
   .contact-me {
-    padding: 0 1rem;
-    padding-bottom: 5rem;
-    text-align: left;
+    width: 90%;
   }
-  .contact-me h3 {
-    margin-bottom: 0.7rem;
-    font-size: 1rem;
+}
+@media screen and (max-width: 1535px) {
+  .row {
+    width: 50%;
   }
-  .contact-me a {
-    font-size: 1.5rem;
-    font-weight: 800;
-    margin-bottom: 1.1rem;
-    line-height: 2.6rem;
+}
+@media screen and (max-width: 1490px) {
+  .showcase {
+    font-size: 13rem;
+  }
+}
+@media screen and (max-width: 1385px) {
+  .home-top,
+  .projects,
+  .contact-me {
+    width: 95%;
+  }
+  .showcase {
+    font-size: 12rem;
   }
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 601px) {
-  .container {
-    padding-top: 8rem;
+@media screen and (max-width: 1280px) {
+  .showcase {
+    font-size: 11rem;
   }
-  .home-top {
-    height: auto;
-    padding-bottom: 5rem;
-  }
-  .home-top > h1 {
-    display: none;
-    height: auto;
-  }
-  .intro-div {
-    position: relative;
-    top: 0;
-    left: 1rem;
-  }
-  .row {
-    width: 70%;
-  }
-  .row h3 {
-    font-size: 1.1rem;
-    margin-bottom: 0.7rem;
-  }
+}
+@media screen and (max-width: 1180px) {
   .row h1 {
-    font-size: 2.2rem;
-    line-height: normal;
-    margin-bottom: 0.7rem;
+    font-size: 4.5rem;
   }
-  .row p {
-    font-size: 1.1rem;
-    font-weight: 600;
+  .showcase {
+    font-size: 10rem;
   }
-  .row span {
-    font-size: 1.1rem;
-    font-weight: 600;
-  }
-  /* projects */
-  .projects {
-    padding: 0 1rem;
-    padding-bottom: 5rem;
-  }
-  .card-grid {
-    padding-top: 3.5rem;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 2rem;
-  }
-  /* contact-me */
-  .contact-me {
-    padding: 0 1rem;
-    padding-bottom: 5rem;
-    text-align: left;
-  }
-  .contact-me h3 {
-    margin-bottom: 0.7rem;
-    font-size: 1rem;
-  }
-  .contact-me a {
-    font-size: 1.5rem;
-    font-weight: 800;
-    margin-bottom: 1.1rem;
-    line-height: 2.6rem;
+}
+@media screen and (max-width: 1070px) {
+  .showcase {
+    font-size: 9rem;
   }
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 740px) {
+@media only screen and (max-width: 965px) {
+  .showcase {
+    font-size: 8rem;
+  }
+}
+@media only screen and (max-width: 860px) {
+  .showcase {
+    font-size: 7rem;
+  }
+}
+
+@media only screen and (max-width: 769px) {
   .container {
-    padding-top: 15rem;
+    padding-top: 8rem;
   }
-  .home-top {
-    height: 75vh;
+  .intro-div,
+  .projects,
+  .contact-me {
+    margin-bottom: 5rem;
   }
-  .intro-div {
-    position: absolute;
-    left: 2rem;
+  .showcase {
+    display: none;
   }
   .row {
     width: 65%;
@@ -257,6 +190,7 @@
   .row h1 {
     font-size: 3.5rem;
     margin-bottom: 1.3rem;
+    line-height: 3.5rem;
   }
   .row p {
     font-size: 1.4rem;
@@ -265,18 +199,11 @@
   .row span {
     font-size: 1.4rem;
   }
-  .projects {
-    padding: 0 2rem;
-    padding-bottom: 10rem;
-  }
+
   .card-grid {
     padding-top: 5rem;
     grid-template-columns: repeat(2, 1fr);
-  }
-  .contact-me {
-    padding: 0 2rem;
-    padding-bottom: 10rem;
-    text-align: center;
+    gap: 2rem;
   }
   .contact-me h3 {
     margin-bottom: 1.3rem;
@@ -287,35 +214,44 @@
   }
 }
 
-@media only screen and (min-width: 780px) {
-  .container {
-    padding-top: 10rem;
+@media only screen and (max-width: 600px) {
+  .row {
+    width: 100%;
   }
-  .intro-div {
-    top: 10rem;
+  .row h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.7rem;
   }
-  .home-top {
-    height: 80vh;
+  .row h1 {
+    font-size: 2.2rem;
+    line-height: normal;
+    margin-bottom: 0.7rem;
   }
-}
-
-@media only screen and (min-width: 1000px) {
-  .intro-div {
-    top: 12rem;
+  .row p {
+    font-size: 1.1rem;
+    font-weight: 600;
   }
-  .home-top > h1 {
-    display: block;
-    font-size: 8.9rem;
-    padding: 0 2rem;
-    text-align: center;
+  .row span {
+    font-size: 1.1rem;
+    font-weight: 600;
   }
-}
-
-@media only screen and (min-width: 1327px) {
-  .intro-div {
-    top: 15rem;
+  /* projects */
+  .card-grid {
+    padding-top: 3.5rem;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
   }
-  .home-top > h1 {
-    font-size: 12rem;
+  /* contact-me */
+  .contact-me {
+    text-align: left;
+  }
+  .contact-me h3 {
+    margin-bottom: 0.7rem;
+    font-size: 1rem;
+  }
+  .contact-me a {
+    font-size: 1.5rem;
+    font-weight: 800;
+    line-height: 2.6rem;
   }
 }
