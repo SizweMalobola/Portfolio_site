@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./aboutStyle.module.css";
 import Footer from "./Footer";
+import GoToTop from "./GoToTop";
 
 function About() {
   return (
@@ -24,6 +25,7 @@ function About() {
         </div>
         <Footer />
       </div>
+      <GoToTop />
     </>
   );
 }

@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import SectionHeader from "./SectionHeader";
 import Card from "./Card";
 import Footer from "./Footer";
+import GoToTop from "./GoToTop";
 
 const Home = () => {
   const animationTimeline = new TimelineLite({ paused: true });
@@ -104,6 +105,7 @@ const Home = () => {
         {/* footer */}
         <Footer />
       </div>
+      <GoToTop />
     </>
   );
 };
