@@ -11,8 +11,7 @@
   --gray-primary: #8e8a8f;
 }
 .project {
-  padding: 0 10rem;
-  width: 100%;
+  width: 85%;
   display: flex;
 }
 /* left */
@@ -20,33 +19,35 @@
   width: 50%;
 }
 .subtitle {
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 350;
-  margin-bottom: 1rem;
+  margin-bottom: 1.6rem;
   letter-spacing: 2px;
   color: var(--gray-primary);
 }
 .title {
   color: var(--black-primary);
-  font-size: 2.4rem;
+  font-size: 3rem;
   font-weight: 800;
   width: 50%;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.6rem;
 }
 .list {
   list-style: none;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.6rem;
 }
 .list li {
   font-size: 1rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
   font-weight: 600;
 }
 .link {
   text-decoration: none;
+  display: inline-block;
   padding: 10px;
   font-size: 1rem;
   margin-right: 15px;
+  margin-top: 1rem;
   border: 2px solid var(--gray-primary);
   border-radius: 4px;
   color: var(--gray-primary);
@@ -63,108 +64,49 @@
 }
 /* images grid */
 .images-container {
-  width: 100%;
-  padding: 5rem 10rem;
+  width: 85%;
+  padding: 5rem 0;
   display: flex;
   flex-direction: column;
-  row-gap: 2rem;
+  row-gap: 4rem;
 }
 .image {
   background: var(--gray-primary);
   width: 100%;
   height: 800px;
 }
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-  .container {
-    padding-top: 8rem;
-  }
-  .project {
-    padding: 0 1rem;
-    flex-direction: column;
-  }
-  .project-overview {
-    width: 100%;
-  }
-  .subtitle {
-    font-size: 1rem;
-    margin-bottom: 0.7rem;
-  }
-  .title {
-    font-size: 2.2rem;
-    line-height: normal;
-    margin-bottom: 1rem;
-    width: 100%;
-  }
-  .list li {
-    font-size: 0.9rem;
-  }
-  .link {
-    margin-bottom: 3rem;
-    display: inline-block;
-  }
-  .project-details {
-    width: 100%;
-  }
-  .project-details p {
-    font-size: 1.1rem;
-  }
+
+@media screen and (max-width: 1595px) {
+  .project,
   .images-container {
-    padding: 3rem 1rem;
+    width: 90%;
   }
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 601px) {
-  .container {
-    padding-top: 8rem;
-  }
-  .project {
-    padding: 0 1rem;
-    flex-direction: column;
-  }
-  .project-overview {
-    width: 100%;
-  }
-  .subtitle {
-    font-size: 1rem;
-    margin-bottom: 0.7rem;
-  }
-  .title {
-    font-size: 2.2rem;
-    line-height: normal;
-    margin-bottom: 1rem;
-    width: 100%;
-  }
-  .list li {
-    font-size: 0.9rem;
-  }
-  .link {
-    margin-bottom: 3rem;
-    display: inline-block;
-  }
-  .project-details {
-    width: 100%;
-  }
-  .project-details p {
-    font-size: 1.1rem;
-  }
+@media screen and (max-width: 1385px) {
+  .project,
   .images-container {
-    padding: 3rem 1rem;
+    width: 95%;
   }
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 740px) {
-  .container {
-    padding-top: 10rem;
-  }
+@media screen and (max-width: 1020px) {
   .project {
-    padding: 0 2rem;
+    flex-direction: column;
   }
+  .title {
+    width: 100%;
+  }
+  .project-details,
   .project-overview {
-    width: 80%;
+    width: 75%;
   }
+  .link {
+    margin-bottom: 2.5rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
   .subtitle {
     margin-bottom: 1rem;
   }
@@ -174,13 +116,50 @@
   .list li {
     font-size: 1rem;
   }
-  .project-details {
-    width: 80%;
-  }
+
   .project-details p {
     font-size: 1.3rem;
   }
   .images-container {
-    padding: 4rem 2rem;
+    padding: 4rem 0;
+  }
+  .image {
+    height: 600px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+  .container {
+    padding-top: 8rem;
+  }
+  .project {
+    flex-direction: column;
+  }
+  .project-overview {
+    width: 100%;
+  }
+  .subtitle {
+    font-size: 1rem;
+    margin-bottom: 0.7rem;
+  }
+  .title {
+    font-size: 2.2rem;
+    line-height: normal;
+    margin-bottom: 1rem;
+    width: 100%;
+  }
+  .list li {
+    font-size: 0.9rem;
+  }
+
+  .project-details {
+    width: 100%;
+  }
+  .project-details p {
+    font-size: 1.1rem;
+  }
+  .images-container {
+    padding: 3rem 0;
   }
 }
