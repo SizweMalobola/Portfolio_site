@@ -11,9 +11,14 @@ function FixedBottom() {
         <FaEnvelope /> <span>contact me</span>
       </Link>
       {/* this will stay hidden until the page has reached a certain point */}
-      <a className={styles["scroll-up"]} href="#top">
+      <button
+        onClick={() => {
+          window.scrollTo(0, 0);
+        }}
+        className={styles["scroll-up"]}
+      >
         <FaArrowUp />
-      </a>
+      </button>
     </>
   );
 }
