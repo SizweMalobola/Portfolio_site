@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./contactStyle.module.css";
 import Footer from "./Footer";
+import { FaRegEnvelope } from "react-icons/fa";
 
 function Contact() {
   return (
@@ -80,7 +81,10 @@ function Contact() {
                 placeholder="What's your message?"
               />
             </div>
-            <button className={styles["button"]}>Send message</button>
+            <button className={styles["button"]}>
+              <FaRegEnvelope />
+              Send message
+            </button>
           </form>
         </div>
       </div>
