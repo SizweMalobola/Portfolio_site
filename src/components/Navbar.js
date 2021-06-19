@@ -40,11 +40,19 @@ function Navbar() {
       >
         <span className={styles["menu-text"]}>MENU</span>
         {/* change color of bars if showModal is true */}
-        <b className={styles["menu-icons"]}>
-          <i></i>
-          <i></i>
-          <i></i>
-        </b>
+
+        {showModal ? (
+          <b className={styles["menu-icons-modal"]}>
+            <i></i>
+            <i></i>
+          </b>
+        ) : (
+          <b className={styles["menu-icons"]}>
+            <i></i>
+            <i></i>
+            <i></i>
+          </b>
+        )}
       </div>
       {showModal ? <ModalPortal closeModal={clickHandler} /> : null}
     </>

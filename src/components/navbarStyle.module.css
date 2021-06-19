@@ -64,6 +64,29 @@
   background-color: black;
   width: 100%;
 }
+.menu-icons-modal {
+  width: 35px;
+  height: 35px;
+  position: relative;
+}
+.menu-icons-modal i {
+  height: 5px;
+  width: 100%;
+  background-color: #8e8a8f;
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  margin-left: -50%;
+  top: 50%;
+  margin-top: -2.5px;
+  transform-origin: center center;
+}
+.menu-icons-modal i:first-child {
+  transform: rotateZ(45deg);
+}
+.menu-icons-modal i:last-child {
+  transform: rotateZ(-45deg);
+}
 /* modal */
 .modal-open {
   height: 100vh;
