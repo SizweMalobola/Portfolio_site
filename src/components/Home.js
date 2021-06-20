@@ -70,7 +70,7 @@ const Home = () => {
             />
             <Card
               timeline="2021"
-              projectName="Wheather App -- retrieves a forecast based on a user's chosen location"
+              projectName="Weather App -- retrieves a forecast based on a user's chosen location"
               imgURL={null}
               height={800}
               more="View Case Study"
