@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./footerStyle.module.css";
 import { Link } from "react-router-dom";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 function Footer() {
   return (
@@ -25,12 +26,11 @@ function Footer() {
         </div>
         <div className={styles["latest-project"]}>
           <h3>Latest projects -</h3>
-          <a href="/#">Iceland</a>
-          <a href="/#">Basic UX</a>
-          <a href="/#">Triniso</a>
-          <a href="/#">Symova</a>
-          <a href="/#">PMR</a>
-          <a href="/#">All projects</a>
+          <Link to="/projects/1">Where is waldo</Link>
+          <Link to="/projects/2">Battleship</Link>
+          <Link to="/projects/3">Memory card</Link>
+          <Link to="/projects/4">Weather app</Link>
+          <Link to="/">All projets</Link>
         </div>
         <div className={styles["current-availability"]}>
           <h3>Current availability -</h3>
@@ -41,6 +41,20 @@ function Footer() {
         </div>
         <div className={styles["social-media"]}>
           <h3>Follow me on -</h3>
+          <a
+            href="https://www.linkedin.com/in/SizweMalobola"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <FaLinkedin />
+          </a>
+          <a
+            href="https://github.com/SizweMalobola"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <FaGithub />
+          </a>
         </div>
       </div>
       <div className={styles["footer-bottom"]}>

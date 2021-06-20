@@ -63,6 +63,15 @@ footer {
   /* padding-left: 5rem; */
   width: 100%;
 }
+.social-media a {
+  color: var(--black-primary);
+  font-size: 2rem;
+  margin-right: 10px;
+  transition: all 0.2s linear;
+}
+.social-media a:hover {
+  color: var(--gray-primary);
+}
 .current-availability p {
   color: var(--gray-primary);
 }
