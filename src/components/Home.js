@@ -20,14 +20,22 @@ const Home = () => {
               <h3>SIZWE MALOBOLA</h3>
               <h1>Self taught web developer</h1>
               <p>
-                It was late 2019 that I decided to pursue a career in the
-                software development industry and become a web developer. Since
-                then I've had my ups and downs, made sacrifices and I've
-                persevered. This is how badly I want to write code for a living.
+                2019 was the year I decided to teach myself how to programme.
+                Now I'm finally at a place where I can contribute meaningfully
+                to building amazing user interfaces & web experiences for
+                people. Don’t take my word for it, go through my portfolio and
+                judge for yourself.
               </p>
               <span>
-                <a href="/#">View Projects</a> or{" "}
-                <Link to="/about">Read About Me</Link>
+                <span
+                  onClick={() => {
+                    window.scrollTo(0, 1000);
+                  }}
+                >
+                  View Projects
+                </span>{" "}
+                or
+                <Link to="/about"> Read About Me</Link>
               </span>
             </div>
           </div>
@@ -37,32 +45,32 @@ const Home = () => {
           <SectionHeader title="Case studies" subtitle="Selected projects" />
           <div className={styles["card-grid"]}>
             <Card
-              timeline="2018 - 2019"
-              projectName="Basic UX -- design resources for Virgin Studio"
+              timeline="2021"
+              projectName="Where Is Waldo -- fullstack photo tagging web app"
               imgURL={null}
               height={800}
               more="View Case Study"
               id="1"
             />
             <Card
-              timeline="2017"
-              projectName="Tripo -- responsive eCommerce website design"
+              timeline="2021"
+              projectName="Battleship -- recreation of the classic Battleship board game with ReactJS"
               imgURL={null}
               height={800}
               more="View Case Study"
               id="2"
             />
             <Card
-              timeline="2017"
-              projectName="Symbiyo -- responsive website design"
+              timeline="2021"
+              projectName="Memory Card -- memory card game built with React"
               imgURL={null}
               height={800}
               more="View Case Study"
               id="3"
             />
             <Card
-              timeline="2016 - 2018"
-              projectName="DVD -- online platform & website design"
+              timeline="2021"
+              projectName="Wheather App -- retrieves a forecast based on a user's chosen location"
               imgURL={null}
               height={800}
               more="View Case Study"
@@ -78,16 +86,16 @@ const Home = () => {
           />
           <div className={styles["card-grid"]}>
             <Card
-              timeline="2021 - PRESENT"
-              projectName="Photo gallery -- design resources for Virgin Studio"
+              timeline="2021"
+              projectName="Personal Blog"
               imgURL={null}
               height={500}
               more="View My Progress"
               id="5"
             />
             <Card
-              timeline="2021 - PRESENT"
-              projectName="Berserk Tribute -- responsive eCommerce website design"
+              timeline="2021"
+              projectName="Berserk Tribute"
               imgURL={null}
               height={500}
               more="View My Progress"

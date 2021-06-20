@@ -51,13 +51,16 @@
   font-size: 1.3rem;
   color: var(--gray-primary);
 }
-.row span a {
+.row span a,
+.row span > span {
   text-decoration: none;
   color: var(--black-primary);
   font-weight: 600;
   transition: all 0.2s linear;
 }
-.row span a:hover {
+.row span a:hover,
+.row span > span:hover {
+  cursor: pointer;
   text-decoration: underline;
 }
 
