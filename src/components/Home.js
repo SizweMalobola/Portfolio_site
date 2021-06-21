@@ -29,7 +29,7 @@ const Home = () => {
               <span>
                 <span
                   onClick={() => {
-                    window.scrollTo(0, 1000);
+                    window.scrollTo({ top: 1000, behavior: "smooth" });
                   }}
                 >
                   View Projects

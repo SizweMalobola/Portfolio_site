@@ -19,7 +19,7 @@ function FixedBottom() {
       {scrollPos > 500 ? (
         <button
           onClick={() => {
-            window.scrollTo(0, 0);
+            window.scrollTo({ top: 0, behavior: "smooth" });
           }}
           className={styles["scroll-up"]}
         >
