@@ -19,10 +19,10 @@ function Slideshow() {
     console.log(slides);
     const dots = document.querySelectorAll(`.${styles["dots"]}`);
     if (index > imagesArray.length) {
-      setSlideIndex(1);
+      return setSlideIndex(1);
     }
     if (index < 1) {
-      setSlideIndex(imagesArray.length);
+      return setSlideIndex(imagesArray.length);
     }
     slides.forEach((el) => {
       el.style.display = "none";
@@ -30,9 +30,20 @@ function Slideshow() {
     dots.forEach((el) => {
       el.classList.remove(`${styles["active"]}`);
     });
+
     slides[slideIndex - 1].style.display = "block";
     dots[slideIndex - 1].classList.add(`${styles["active"]}`);
   };
+  const next = () => {
+    setSlideIndex(slideIndex + 1);
+  };
+  const previous = () => {
+    setSlideIndex(slideIndex - 1);
+  };
+  const current = (index) => {
+    setSlideIndex(index);
+  };
+
   useEffect(() => {
     showSlide(slideIndex);
   });
@@ -58,12 +69,25 @@ function Slideshow() {
         );
       })}
       {/* next and previous buttons */}
-      <button className={`${styles["btn"]} ${styles["prev"]}`}>&#10094;</button>
-      <button className={`${styles["btn"]} ${styles["next"]}`}>&#10095;</button>
+      <button
+        onClick={previous}
+        className={`${styles["btn"]} ${styles["prev"]}`}
+      >
+        &#10094;
+      </button>
+      <button onClick={next} className={`${styles["btn"]} ${styles["next"]}`}>
+        &#10095;
+      </button>
       <div className={styles["dots-container"]}>
         {imagesArray.map((el, index) => {
           return (
-            <span key={"dot" + (index + 1)} className={styles["dots"]}></span>
+            <span
+              onClick={() => {
+                current(index + 1);
+              }}
+              key={"dot" + (index + 1)}
+              className={styles["dots"]}
+            ></span>
           );
         })}
       </div>
