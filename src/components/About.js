@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./aboutStyle.module.css";
 import Footer from "./Footer";
 import GoToTop from "./GoToTop";
+import Slideshow from "./Slideshow";
 
 function About() {
   return (
@@ -38,14 +39,91 @@ function About() {
           much wiser than me. Whomever ends up giving me an opportunity to work
           and grow besides them will not regret taking their chance on me.
         </p>
-        <div className={styles["stack-grid"]}>
-          <div>HTML</div>
-          <div>CSS</div>
-          <div>JavaScript</div>
-          <div>React</div>
-          <div>Ruby</div>
-          <div>Ruby on Rails</div>
-        </div>
+        <Slideshow />
+        <section className={styles["skills"]}>
+          <div>
+            <h2>Programming languages</h2>
+            <div>
+              <h3>HTML</h3>
+              <i>Proficient</i>
+            </div>
+            <div>
+              <h3>CSS</h3>
+              <i>Proficient</i>
+            </div>
+            <div>
+              <h3>SASS</h3>
+              <i>Working knowledge</i>
+            </div>
+            <div>
+              <h3>JavaScript</h3>
+              <i>Proficient</i>
+            </div>
+            <div>
+              <h3>Ruby</h3>
+              <i>Past experience</i>
+            </div>
+          </div>
+          <div>
+            <h2>Frameworks, Libraries & Tools</h2>
+            <div>
+              <h3>ReactJS</h3>
+              <i>Proficient</i>
+            </div>
+            <div>
+              <h3>Ruby On Rails</h3>
+              <i>Past experience</i>
+            </div>
+            <div>
+              <h3>Bootstrap 4 & 5</h3>
+              <i>Working knowledge</i>
+            </div>
+            <div>
+              <h3>MySQL</h3>
+              <i>Past experience</i>
+            </div>
+            <div>
+              <h3>Git & GitHub</h3>
+              <i>Proficient</i>
+            </div>
+            <div>
+              <h3>Jest</h3>
+              <i>Working knowledge</i>
+            </div>
+            <div>
+              <h3>JQuery</h3>
+              <i>Past experience</i>
+            </div>
+            <div>
+              <h3>Webpack</h3>
+              <i>Proficient</i>
+            </div>
+            <div>
+              <h3>NPM</h3>
+              <i>Proficient</i>
+            </div>
+            <div>
+              <h3>Heroku</h3>
+              <i>Past experience</i>
+            </div>
+            <div>
+              <h3>Firebase</h3>
+              <i>Working knowledge</i>
+            </div>
+            <div>
+              <h3>VS Code</h3>
+              <i>Proficient</i>
+            </div>
+            <div>
+              <h3>Figma</h3>
+              <i>Past experience</i>
+            </div>
+            <div>
+              <h3>Chrome Developer Tools</h3>
+              <i>Proficient</i>
+            </div>
+          </div>
+        </section>
         <Footer />
       </div>
       <GoToTop />
