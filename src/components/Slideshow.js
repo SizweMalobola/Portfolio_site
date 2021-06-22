@@ -3,6 +3,7 @@ import styles from "./slideshowStyle.module.css";
 
 function Slideshow() {
   const [slideIndex, setSlideIndex] = useState(1);
+  const [onHover, setOnHover] = useState(false);
   const imagesArray = [
     "undraw_developer_activity_bv83.svg",
     "undraw_fixing_bugs_w7gi.svg",
@@ -50,7 +51,15 @@ function Slideshow() {
 
   return (
     // sideshow container
-    <div className={styles["container"]}>
+    <div
+      onMouseEnter={() => {
+        setOnHover(true);
+      }}
+      onMouseLeave={() => {
+        setOnHover(false);
+      }}
+      className={styles["container"]}
+    >
       {/* full-width images with number and caption text */}
       {imagesArray.map((val, index, array) => {
         return (
@@ -69,15 +78,23 @@ function Slideshow() {
         );
       })}
       {/* next and previous buttons */}
-      <button
-        onClick={previous}
-        className={`${styles["btn"]} ${styles["prev"]}`}
-      >
-        &#10094;
-      </button>
-      <button onClick={next} className={`${styles["btn"]} ${styles["next"]}`}>
-        &#10095;
-      </button>
+      {onHover && (
+        <>
+          <button
+            onClick={previous}
+            className={`${styles["btn"]} ${styles["prev"]}`}
+          >
+            &#10094;
+          </button>
+          <button
+            onClick={next}
+            className={`${styles["btn"]} ${styles["next"]}`}
+          >
+            &#10095;
+          </button>
+        </>
+      )}
+
       <div className={styles["dots-container"]}>
         {imagesArray.map((el, index) => {
           return (
