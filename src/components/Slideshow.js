@@ -19,7 +19,10 @@ function Slideshow() {
       {/* full-width images with number and caption text */}
       {imagesArray.map((val, index, array) => {
         return (
-          <div key={val + index} className={styles["slides fade"]}>
+          <div
+            key={val + index}
+            className={`${styles["slides"]} ${styles["fade"]}`}
+          >
             <div className={styles["slide-number"]}>
               {index + 1} / {array.length}
             </div>
@@ -31,12 +34,12 @@ function Slideshow() {
         );
       })}
       {/* next and previous buttons */}
-      <button className={styles["btn prev"]}>&#10094;</button>
-      <button className={styles["btn next"]}>&#10095;</button>
-      <div className={styles["dots"]}>
+      <button className={`${styles["btn"]} ${styles["prev"]}`}>&#10094;</button>
+      <button className={`${styles["btn"]} ${styles["next"]}`}>&#10095;</button>
+      <div className={styles["dots-container"]}>
         {imagesArray.map((el, index) => {
           return (
-            <span key={"dot" + (index + 1)} className={styles["dot"]}></span>
+            <span key={"dot" + (index + 1)} className={styles["dots"]}></span>
           );
         })}
       </div>
