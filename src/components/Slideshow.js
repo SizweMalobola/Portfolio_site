@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./slideshowStyle.module.css";
 
 function Slideshow() {
+  const [slideIndex, setSlideIndex] = useState(1);
   const imagesArray = [
     "undraw_developer_activity_bv83.svg",
     "undraw_fixing_bugs_w7gi.svg",
@@ -12,6 +13,29 @@ function Slideshow() {
     "undraw_static_assets_rpm6.svg",
     "undraw_work_together_h63l.svg",
   ];
+
+  const showSlide = (index) => {
+    const slides = document.querySelectorAll(`.${styles["slides"]}`);
+    console.log(slides);
+    const dots = document.querySelectorAll(`.${styles["dots"]}`);
+    if (index > imagesArray.length) {
+      setSlideIndex(1);
+    }
+    if (index < 1) {
+      setSlideIndex(imagesArray.length);
+    }
+    slides.forEach((el) => {
+      el.style.display = "none";
+    });
+    dots.forEach((el) => {
+      el.classList.remove(`${styles["active"]}`);
+    });
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].classList.add(`${styles["active"]}`);
+  };
+  useEffect(() => {
+    showSlide(slideIndex);
+  });
 
   return (
     // sideshow container
