@@ -17,7 +17,6 @@ function Slideshow() {
 
   const showSlide = (index) => {
     const slides = document.querySelectorAll(`.${styles["slides"]}`);
-    console.log(slides);
     const dots = document.querySelectorAll(`.${styles["dots"]}`);
     if (index > imagesArray.length) {
       return setSlideIndex(1);
@@ -35,18 +34,27 @@ function Slideshow() {
     slides[slideIndex - 1].style.display = "block";
     dots[slideIndex - 1].classList.add(`${styles["active"]}`);
   };
+
   const next = () => {
     setSlideIndex(slideIndex + 1);
   };
+
   const previous = () => {
     setSlideIndex(slideIndex - 1);
   };
+
   const current = (index) => {
     setSlideIndex(index);
   };
 
   useEffect(() => {
     showSlide(slideIndex);
+    let interval = setInterval(() => {
+      next();
+    }, 4000);
+    return () => {
+      clearInterval(interval);
+    };
   });
 
   return (
