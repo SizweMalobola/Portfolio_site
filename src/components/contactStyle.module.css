@@ -118,6 +118,11 @@
   color: black;
   border-radius: 4px;
   background-color: transparent;
+  transition: all 0.5s ease;
+}
+.button:hover {
+  cursor: pointer;
+  background-color: #8e8a8f1e;
 }
 .button svg {
   margin-right: 10px;
