@@ -197,7 +197,6 @@
   }
   .row p {
     font-size: 1.4rem;
-    font-weight: 550;
   }
   .row span {
     font-size: 1.4rem;
@@ -232,11 +231,9 @@
   }
   .row p {
     font-size: 1.1rem;
-    font-weight: 600;
   }
   .row span {
     font-size: 1.1rem;
-    font-weight: 600;
   }
   /* projects */
   .card-grid {
