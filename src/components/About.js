@@ -71,6 +71,10 @@ function About() {
               <i>Proficient</i>
             </div>
             <div>
+              <h3>Redux</h3>
+              <i>Working knowledge</i>
+            </div>
+            <div>
               <h3>Ruby On Rails</h3>
               <i>Past experience</i>
             </div>
