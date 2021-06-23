@@ -20,41 +20,47 @@ function Navbar() {
   }, [showModal]);
   return (
     <>
-      <Link to="/" className={`${styles["logo"]}`}>
-        <span
-          style={
-            showModal ? { color: "#8e8a8f", border: "4px solid #8e8a8f" } : null
-          }
-        >
-          <b>S</b>
-          <b>M</b>
-        </span>
-        <span style={showModal ? { color: "#8e8a8f" } : null}>
-          Web Developer
-        </span>
-      </Link>
-      <div
-        onClick={clickHandler}
-        style={showModal ? { color: "#8e8a8f" } : null}
-        className={styles["menu"]}
-      >
-        <span className={styles["menu-text"]}>MENU</span>
-        {/* change color of bars if showModal is true */}
-
-        {showModal ? (
-          <b className={styles["menu-icons-modal"]}>
-            <i></i>
-            <i></i>
-          </b>
-        ) : (
-          <b className={styles["menu-icons"]}>
-            <i></i>
-            <i></i>
-            <i></i>
-          </b>
-        )}
-      </div>
-      {showModal ? <ModalPortal closeModal={clickHandler} /> : null}
+      {showModal ? (
+        <>
+          <Link to="/" className={`${styles["logo"]} ${styles["logo-modal"]}`}>
+            <span>
+              <b>S</b>
+              <b>M</b>
+            </span>
+            <span>Web Developer</span>
+          </Link>
+          <div onClick={clickHandler} className={styles["menu"]}>
+            <span
+              className={`${styles["menu-text"]} ${styles["menu-text-modal"]}`}
+            >
+              CLOSE
+            </span>
+            <b className={styles["menu-icons-modal"]}>
+              <i></i>
+              <i></i>
+            </b>
+          </div>
+          <ModalPortal closeModal={clickHandler} />
+        </>
+      ) : (
+        <>
+          <Link to="/" className={`${styles["logo"]}`}>
+            <span>
+              <b>S</b>
+              <b>M</b>
+            </span>
+            <span>Web Developer</span>
+          </Link>
+          <div onClick={clickHandler} className={styles["menu"]}>
+            <span className={styles["menu-text"]}>MENU</span>
+            <b className={styles["menu-icons"]}>
+              <i></i>
+              <i></i>
+              <i></i>
+            </b>
+          </div>
+        </>
+      )}
     </>
   );
 }
