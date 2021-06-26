@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styles from "./homeStyle.module.css";
-import { TimelineLite } from "gsap/gsap-core";
+import { TimelineLite, CSSPlugin } from "gsap/all";
 import { Link } from "react-router-dom";
 import SectionHeader from "./SectionHeader";
 import Card from "./Card";
@@ -8,7 +8,18 @@ import Footer from "./Footer";
 import GoToTop from "./GoToTop";
 
 const Home = () => {
-  const animationTimeline = new TimelineLite({ paused: true });
+  let introLinesRef = [];
+  const myTween = new TimelineLite({ paused: true });
+  useEffect(() => {
+    myTween
+      .staggerFrom(
+        introLinesRef,
+        0.8,
+        { autoAlpha: 0, y: 60, ease: "power3.out" },
+        0.15
+      )
+      .play();
+  }, []);
   return (
     <>
       <div className={styles["container"]}>
@@ -17,16 +28,18 @@ const Home = () => {
         <section className={styles["home-top"]}>
           <div className={styles["intro-div"]}>
             <div className={styles["row"]}>
-              <h3>SIZWE MALOBOLA</h3>
-              <h1>Self taught web developer</h1>
-              <p>
+              <h3 ref={(line1) => introLinesRef.push(line1)}>SIZWE MALOBOLA</h3>
+              <h1 ref={(line2) => introLinesRef.push(line2)}>
+                Self taught web developer
+              </h1>
+              <p ref={(line3) => introLinesRef.push(line3)}>
                 2019 was the year I decided to teach myself how to programme.
                 Now I'm finally at a place where I can contribute meaningfully
                 to building amazing user interfaces & web experiences for
                 people. Don’t take my word for it, go through my portfolio and
                 judge for yourself.
               </p>
-              <span>
+              <span ref={(line4) => introLinesRef.push(line4)}>
                 <span
                   onClick={() => {
                     window.scrollTo({ top: 1000, behavior: "smooth" });
