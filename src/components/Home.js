@@ -1,30 +1,47 @@
 import React, { useEffect } from "react";
 import styles from "./homeStyle.module.css";
-import { TimelineLite, CSSPlugin } from "gsap/all";
+import { gsap, ScrollTrigger } from "gsap/all";
 import { Link } from "react-router-dom";
 import SectionHeader from "./SectionHeader";
 import Card from "./Card";
 import Footer from "./Footer";
 import GoToTop from "./GoToTop";
 
+gsap.registerPlugin(ScrollTrigger);
+
 const Home = () => {
   let showcaseRef = null;
   let introLinesRef = [];
-  const myTween = new TimelineLite();
+  let contactMeRef = null;
+  const myTween = gsap.timeline();
   useEffect(() => {
     if (showcaseRef) {
-      myTween.from(showcaseRef, 0.8, {
-        autoAlpha: 0,
-        scale: 1,
-        color: "gray",
-      });
+      myTween
+        .from(showcaseRef, 0.8, {
+          autoAlpha: 0,
+          scale: 1,
+          color: "gray",
+        })
+        .staggerFrom(
+          introLinesRef,
+          0.8,
+          { autoAlpha: 0, y: 60, ease: "power3.out" },
+          0.15
+        );
+    } else {
+      myTween.staggerFrom(
+        introLinesRef,
+        0.8,
+        { autoAlpha: 0, y: 60, ease: "power3.out" },
+        0.15
+      );
     }
-    myTween.staggerFrom(
-      introLinesRef,
-      0.8,
-      { autoAlpha: 0, y: 60, ease: "power3.out" },
-      0.15
-    );
+    gsap.from(contactMeRef, {
+      scrollTrigger: { trigger: contactMeRef },
+      duration: 0.8,
+      y: 130,
+      autoAlpha: 0,
+    });
   }, []);
   return (
     <>
@@ -65,6 +82,7 @@ const Home = () => {
         <section className={styles["projects"]}>
           <SectionHeader title="Case studies" subtitle="Selected projects" />
           <div className={styles["card-grid"]}>
+            {/*TODO: find a way to map Card */}
             <Card
               timeline="2021"
               projectName="Where Is Waldo -- fullstack photo tagging web app"
@@ -125,7 +143,12 @@ const Home = () => {
           </div>
         </section>
         {/* contact section */}
-        <section className={styles["contact-me"]}>
+        <section
+          ref={(section) => {
+            contactMeRef = section;
+          }}
+          className={styles["contact-me"]}
+        >
           <h3>NEED A WED DEVELOPER ?</h3>
           <Link to="/contact">
             <h1>Let's work together</h1>
