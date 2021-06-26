@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
 import styles from "./navbarStyle.module.css";
-import { TimelineLite } from "gsap/gsap-core";
+import { CSSPlugin, TweenMax } from "gsap/all";
 import { Link } from "react-router-dom";
 import ModalPortal from "./ModalPortal";
+import { Transition } from "react-transition-group";
 
 function Navbar() {
   const [showModal, setShowModal] = useState(false);
-  const animationTimeline = new TimelineLite({ paused: true });
   const clickHandler = () => {
     showModal ? setShowModal(false) : setShowModal(true);
   };
@@ -40,7 +40,6 @@ function Navbar() {
               <i></i>
             </b>
           </div>
-          <ModalPortal closeModal={clickHandler} />
         </>
       ) : (
         <>
@@ -61,6 +60,24 @@ function Navbar() {
           </div>
         </>
       )}
+      <Transition
+        timeout={1000}
+        mountOnEnter
+        unmountOnExit
+        in={showModal}
+        addEndListener={(node, done) => {
+          TweenMax.set(node, { y: showModal ? 1000 : null });
+          TweenMax.to(node, {
+            duration: showModal ? 0.4 : 0.4,
+            autoAlpha: showModal ? 1 : null,
+            y: showModal ? 0 : -1000,
+            ease: "linear",
+            onComplete: done,
+          });
+        }}
+      >
+        <ModalPortal closeModal={clickHandler} />
+      </Transition>
     </>
   );
 }

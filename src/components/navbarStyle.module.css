@@ -51,7 +51,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: all 0.5s ease;
+  transition: color 0.5s ease;
 }
 .menu:hover {
   cursor: pointer;
@@ -78,7 +78,7 @@
   height: 5px;
   background-color: black;
   width: 100%;
-  transition: all 0.5s ease;
+  transition: color 0.5s ease;
 }
 
 /* modal */
