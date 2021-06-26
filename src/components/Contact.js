@@ -1,10 +1,42 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styles from "./contactStyle.module.css";
 import Footer from "./Footer";
 import { FaRegEnvelope } from "react-icons/fa";
 import GoToTop from "./GoToTop";
+import { gsap, ScrollTrigger } from "gsap/all";
+
+gsap.registerPlugin(ScrollTrigger);
 
 function Contact() {
+  const sectionsRef = [];
+  useEffect(() => {
+    const letters = document.querySelectorAll(`.${styles["letter"]}`);
+    if (letters) {
+      gsap.from(letters, {
+        duration: 0.8,
+        autoAlpha: 0,
+        y: "random(-40,40)",
+        stagger: 0.25,
+      });
+    }
+    gsap.from(sectionsRef[0], {
+      scrollTrigger: {
+        trigger: sectionsRef[0],
+      },
+      duration: 0.8,
+      y: 200,
+      autoAlpha: 0,
+    });
+    gsap.from(sectionsRef[1], {
+      scrollTrigger: {
+        trigger: sectionsRef[1],
+      },
+      duration: 0.8,
+      y: 200,
+      autoAlpha: 0,
+    });
+  }, []);
+
   return (
     <>
       <div className={styles["container"]}>
@@ -37,11 +69,21 @@ function Contact() {
           </div>
         </div>
         <div className={styles["contact-info"]}>
-          <div className={styles["left"]}>
+          <div
+            ref={(left) => {
+              sectionsRef.push(left);
+            }}
+            className={styles["left"]}
+          >
             <h3>CONTACT</h3>
             <h2>Get in touch - let's work together.</h2>
           </div>
-          <div className={styles["right"]}>
+          <div
+            ref={(right) => {
+              sectionsRef.push(right);
+            }}
+            className={styles["right"]}
+          >
             <p>
               Got a project? Drop me a line if you want to work together on
               something exciting. Big or small. Mobile or web.
@@ -73,9 +115,7 @@ function Contact() {
               <div className={styles["input-div"]}>
                 <label htmlFor="#dropdown1">CV/Resume</label>
                 <select id="dropdown1" name="resume dropdown" required>
-                  <option value="no" selected>
-                    Want a copy of my resume?
-                  </option>
+                  <option value="no">Want a copy of my resume?</option>
                   <option value="yes">Yes</option>
                   <option value="no">Yesn't</option>
                 </select>
