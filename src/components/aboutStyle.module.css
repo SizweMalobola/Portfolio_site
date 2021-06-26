@@ -42,7 +42,7 @@
 .skills > div {
   margin-bottom: 5rem;
   display: grid;
-  grid-template-columns: repeat(6, minmax(7rem, 9rem));
+  grid-template-columns: repeat(auto, minmax(7rem, 9rem));
   gap: 1rem;
 }
 .skills > div h2 {
