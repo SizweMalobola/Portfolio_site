@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from "react";
 import styles from "./slideshowStyle.module.css";
+import { gsap, ScrollTrigger } from "gsap/all";
+
+gsap.registerPlugin(ScrollTrigger);
 
 function Slideshow() {
   const [slideIndex, setSlideIndex] = useState(1);
@@ -14,6 +17,7 @@ function Slideshow() {
     "undraw_static_assets_rpm6.svg",
     "undraw_work_together_h63l.svg",
   ];
+  let divRef = null;
 
   const showSlide = (index) => {
     const slides = document.querySelectorAll(`.${styles["slides"]}`);
@@ -48,6 +52,15 @@ function Slideshow() {
   };
 
   useEffect(() => {
+    gsap.from(divRef, {
+      scrollTrigger: { trigger: divRef },
+      duration: 0.8,
+      y: 400,
+      autoAlpha: 0,
+    });
+  }, []);
+
+  useEffect(() => {
     showSlide(slideIndex);
     let interval = setInterval(() => {
       next();
@@ -60,6 +73,9 @@ function Slideshow() {
   return (
     // sideshow container
     <div
+      ref={(div) => {
+        divRef = div;
+      }}
       onMouseEnter={() => {
         setOnHover(true);
       }}
