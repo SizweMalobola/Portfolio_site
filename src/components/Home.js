@@ -8,23 +8,31 @@ import Footer from "./Footer";
 import GoToTop from "./GoToTop";
 
 const Home = () => {
+  let showcaseRef = null;
   let introLinesRef = [];
-  const myTween = new TimelineLite({ paused: true });
+  const myTween = new TimelineLite();
   useEffect(() => {
-    myTween
-      .staggerFrom(
-        introLinesRef,
-        0.8,
-        { autoAlpha: 0, y: 60, ease: "power3.out" },
-        0.15
-      )
-      .play();
+    if (showcaseRef) {
+      myTween.from(showcaseRef, 0.8, {
+        autoAlpha: 0,
+        scale: 1,
+        color: "gray",
+      });
+    }
+    myTween.staggerFrom(
+      introLinesRef,
+      0.8,
+      { autoAlpha: 0, y: 60, ease: "power3.out" },
+      0.15
+    );
   }, []);
   return (
     <>
       <div className={styles["container"]}>
         {/* home top section */}
-        <h1 className={styles["showcase"]}>web developer.</h1>
+        <h1 ref={(h1) => (showcaseRef = h1)} className={styles["showcase"]}>
+          web developer.
+        </h1>
         <section className={styles["home-top"]}>
           <div className={styles["intro-div"]}>
             <div className={styles["row"]}>
