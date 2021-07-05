@@ -8,8 +8,12 @@ gsap.registerPlugin(ScrollTrigger);
 
 function Projects({ match }) {
   const [projectData] = useState(() => {
+    let typeOfProject = "selected_projects";
+    if (match.params.id.length > 2) {
+      typeOfProject = "currently_working_on";
+    }
     let dataObject;
-    for (let obj of data) {
+    for (let obj of data[typeOfProject]) {
       if (obj.id === match.params.id) {
         return (dataObject = obj);
       }
