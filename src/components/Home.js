@@ -83,7 +83,7 @@ const Home = () => {
         <section className={styles["projects"]}>
           <SectionHeader title="Case studies" subtitle="Selected projects" />
           <div className={styles["card-grid"]}>
-            {data.map((obj, index) => {
+            {data["selected_projects"].map((obj, index) => {
               return (
                 <Card
                   key={index + obj.id}
@@ -105,22 +105,19 @@ const Home = () => {
             subtitle="Projects I'm currently working on"
           />
           <div className={styles["card-grid"]}>
-            <Card
-              timeline="2021"
-              projectName="Personal Blog"
-              imgURL={null}
-              height={500}
-              more="View My Progress"
-              id="in_the_works"
-            />
-            <Card
-              timeline="2021"
-              projectName="Berserk Tribute"
-              imgURL={null}
-              height={500}
-              more="View My Progress"
-              id="in_the_works"
-            />
+            {data["currently_working_on"].map((obj, index) => {
+              return (
+                <Card
+                  key={index + obj.id}
+                  timeline="2021"
+                  projectName={obj.title}
+                  imgURL={obj["assets_url"][0]}
+                  height={500}
+                  more="View My Progress"
+                  id={obj.id}
+                />
+              );
+            })}
           </div>
         </section>
         {/* contact section */}
