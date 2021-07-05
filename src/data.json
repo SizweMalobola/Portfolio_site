@@ -1,10 +1,11 @@
 [
   {
-    "title": "Basic UX — design resources for InVision Studio",
-    "tech_stack": ["HTML", "CSS", "JavaScript"],
+    "id": "1",
+    "title": "Where Is Waldo -- fullstack photo tagging web app",
+    "tech_stack": ["HTML", "CSS", "JavaScript", "React"],
     "code_url": "https://github.com",
     "preview_url": "https://github.com",
-    "assets_url": ["url_1", "url_2"],
+    "assets_url": [null, "url_1", "url_2"],
     "paragraph_array": [
       "Studio is a new powerful tool where you can design, prototype and animate your projects easily. One of InVision's initiatives is the Design Forward Fund, a $5 million fund dedicated to investing in the future of design. I'm happy to say that my idea was among several selected for implementation and shortly after the initial interviews, we began shaping requirements for the Basic UX project.",
       "Our goal was to create an extensive library of components and assets to help designers wireframe their web projects faster. Over the course of 5 months I designed more than 400 layout components in 30 categories (each prepared for desktop, tablet & phone screens), 128 icons, 56 user journey map elements and over 100 user interface elements. You can easily customize and combine them when working on your wireframes.",
@@ -12,11 +13,51 @@
     ]
   },
   {
-    "id": 2,
-    "gender": "Male",
-    "first_name": "Carlos",
-    "last_name": "Fowler",
-    "email": "cfowler1@gnu.org",
-    "ip_address": "214.248.201.11"
+    "id": "2",
+    "title": "Battleship -- recreation of the classic Battleship board game with ReactJS",
+    "tech_stack": ["HTML", "CSS", "JavaScript", "React"],
+    "code_url": "https://github.com",
+    "preview_url": "https://github.com",
+    "assets_url": [null, "url_1", "url_2"],
+    "paragraph_array": [
+      "Studio is a new powerful tool where you can design, prototype and animate your projects easily. One of InVision's initiatives is the Design Forward Fund, a $5 million fund dedicated to investing in the future of design. I'm happy to say that my idea was among several selected for implementation and shortly after the initial interviews, we began shaping requirements for the Basic UX project.",
+      "Our goal was to create an extensive library of components and assets to help designers wireframe their web projects faster. Over the course of 5 months I designed more than 400 layout components in 30 categories (each prepared for desktop, tablet & phone screens), 128 icons, 56 user journey map elements and over 100 user interface elements. You can easily customize and combine them when working on your wireframes.",
+      "Aside from that, I was in touch with the Director of Product and the InVision tech team to report issues and bugs that I found within the software, as well as to propose improvements regarding certain functionalities. It was exciting to see how the product evolved and improved with each update during this short time."
+    ]
+  },
+  {
+    "id": "3",
+    "title": "Shopping Cart -- A simple online store where you can browse the catalogue and add/remove items to your cart",
+    "tech_stack": ["HTML", "CSS", "JavaScript", "React"],
+    "code_url": "https://github.com",
+    "preview_url": "https://github.com",
+    "assets_url": [null, "url_1", "url_2"],
+    "paragraph_array": [
+      "Studio is a new powerful tool where you can design, prototype and animate your projects easily. One of InVision's initiatives is the Design Forward Fund, a $5 million fund dedicated to investing in the future of design. I'm happy to say that my idea was among several selected for implementation and shortly after the initial interviews, we began shaping requirements for the Basic UX project.",
+      "Our goal was to create an extensive library of components and assets to help designers wireframe their web projects faster. Over the course of 5 months I designed more than 400 layout components in 30 categories (each prepared for desktop, tablet & phone screens), 128 icons, 56 user journey map elements and over 100 user interface elements. You can easily customize and combine them when working on your wireframes.",
+      "Aside from that, I was in touch with the Director of Product and the InVision tech team to report issues and bugs that I found within the software, as well as to propose improvements regarding certain functionalities. It was exciting to see how the product evolved and improved with each update during this short time."
+    ]
+  },
+  {
+    "id": "4",
+    "title": "Weather App -- allows users to enter a city name and receive current weather data",
+    "tech_stack": ["HTML", "CSS", "JavaScript"],
+    "code_url": "https://github.com",
+    "preview_url": "https://github.com",
+    "assets_url": [null, "url_1", "url_2"],
+    "paragraph_array": [
+      "Studio is a new powerful tool where you can design, prototype and animate your projects easily. One of InVision's initiatives is the Design Forward Fund, a $5 million fund dedicated to investing in the future of design. I'm happy to say that my idea was among several selected for implementation and shortly after the initial interviews, we began shaping requirements for the Basic UX project.",
+      "Our goal was to create an extensive library of components and assets to help designers wireframe their web projects faster. Over the course of 5 months I designed more than 400 layout components in 30 categories (each prepared for desktop, tablet & phone screens), 128 icons, 56 user journey map elements and over 100 user interface elements. You can easily customize and combine them when working on your wireframes.",
+      "Aside from that, I was in touch with the Director of Product and the InVision tech team to report issues and bugs that I found within the software, as well as to propose improvements regarding certain functionalities. It was exciting to see how the product evolved and improved with each update during this short time."
+    ]
+  },
+  {
+    "id": "in_the_works",
+    "title": "Project is currently in the conceptual phase",
+    "tech_stack": ["???", "???", "???"],
+    "code_url": "https://github.com",
+    "preview_url": "https://github.com",
+    "assets_url": [null, "url_1", "url_2"],
+    "paragraph_array": ["project might take some time to be fully developed"]
   }
 ]
