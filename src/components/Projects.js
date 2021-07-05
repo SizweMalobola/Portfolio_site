@@ -8,7 +8,13 @@ gsap.registerPlugin(ScrollTrigger);
 
 function Projects({ match }) {
   const [projectData] = useState(() => {
-    return data[match.params.id - 1];
+    let dataObject;
+    for (let obj of data) {
+      if (obj.id === match.params.id) {
+        return (dataObject = obj);
+      }
+    }
+    return dataObject;
   });
   const introLinesRef = [];
   const secondLinesRef = [];
