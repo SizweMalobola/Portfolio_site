@@ -6,6 +6,7 @@ import SectionHeader from "./SectionHeader";
 import Card from "./Card";
 import Footer from "./Footer";
 import GoToTop from "./GoToTop";
+import data from "../data.json";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -82,39 +83,19 @@ const Home = () => {
         <section className={styles["projects"]}>
           <SectionHeader title="Case studies" subtitle="Selected projects" />
           <div className={styles["card-grid"]}>
-            {/*TODO: find a way to map Card */}
-            <Card
-              timeline="2021"
-              projectName="Where Is Waldo -- fullstack photo tagging web app"
-              imgURL={null}
-              height={800}
-              more="View Case Study"
-              id="1"
-            />
-            <Card
-              timeline="2021"
-              projectName="Battleship -- recreation of the classic Battleship board game with ReactJS"
-              imgURL={null}
-              height={800}
-              more="View Case Study"
-              id="2"
-            />
-            <Card
-              timeline="2021"
-              projectName="Memory Card -- memory card game built with React"
-              imgURL={null}
-              height={800}
-              more="View Case Study"
-              id="3"
-            />
-            <Card
-              timeline="2021"
-              projectName="Weather App -- retrieves a forecast based on a user's chosen location"
-              imgURL={null}
-              height={800}
-              more="View Case Study"
-              id="4"
-            />
+            {data.map((obj, index) => {
+              return (
+                <Card
+                  key={index + obj.id}
+                  timeline="2021"
+                  projectName={obj.title}
+                  imgURL={obj["assets_url"][0]}
+                  height={800}
+                  more="View Case Study"
+                  id={obj.id}
+                />
+              );
+            })}
           </div>
         </section>
         {/* personal projects section --add as coming soon */}
@@ -130,7 +111,7 @@ const Home = () => {
               imgURL={null}
               height={500}
               more="View My Progress"
-              id="5"
+              id="in_the_works"
             />
             <Card
               timeline="2021"
@@ -138,7 +119,7 @@ const Home = () => {
               imgURL={null}
               height={500}
               more="View My Progress"
-              id="6"
+              id="in_the_works"
             />
           </div>
         </section>
