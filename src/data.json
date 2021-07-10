@@ -6,11 +6,15 @@
       "tech_stack": ["HTML", "CSS", "JavaScript", "React"],
       "code_url": "https://github.com",
       "preview_url": "https://github.com",
-      "assets_url": ["mockup3.jpg", null, null],
+      "assets_url": [
+        "mockup3.jpg",
+        "Where-s-Waldo.png",
+        "Where-s-Waldo(4).png"
+      ],
       "paragraph_array": [
-        "Studio is a new powerful tool where you can design, prototype and animate your projects easily. One of InVision's initiatives is the Design Forward Fund, a $5 million fund dedicated to investing in the future of design. I'm happy to say that my idea was among several selected for implementation and shortly after the initial interviews, we began shaping requirements for the Basic UX project.",
-        "Our goal was to create an extensive library of components and assets to help designers wireframe their web projects faster. Over the course of 5 months I designed more than 400 layout components in 30 categories (each prepared for desktop, tablet & phone screens), 128 icons, 56 user journey map elements and over 100 user interface elements. You can easily customize and combine them when working on your wireframes.",
-        "Aside from that, I was in touch with the Director of Product and the InVision tech team to report issues and bugs that I found within the software, as well as to propose improvements regarding certain functionalities. It was exciting to see how the product evolved and improved with each update during this short time."
+        "Developer a web version of a British series of puzzle books called Where is Wally. This is a full-stack project which implements the use of React and related front-end concepts and the back-end functionality is handled by Firebase a BAAS.",
+        "Used Firebase’s Realtime database to store the user’s name and score after the puzzle is completed.",
+        "Used React life-cycle method to preform asynchronous tasks like fetching the score data from the Firebase Realtime database and setting timers."
       ]
     },
     {
@@ -19,11 +23,11 @@
       "tech_stack": ["HTML", "CSS", "JavaScript", "React"],
       "code_url": "https://github.com",
       "preview_url": "https://github.com",
-      "assets_url": ["mockup2.jpg", null, null],
+      "assets_url": ["mockup2.jpg", "Battleship(2).png", null],
       "paragraph_array": [
-        "Studio is a new powerful tool where you can design, prototype and animate your projects easily. One of InVision's initiatives is the Design Forward Fund, a $5 million fund dedicated to investing in the future of design. I'm happy to say that my idea was among several selected for implementation and shortly after the initial interviews, we began shaping requirements for the Basic UX project.",
-        "Our goal was to create an extensive library of components and assets to help designers wireframe their web projects faster. Over the course of 5 months I designed more than 400 layout components in 30 categories (each prepared for desktop, tablet & phone screens), 128 icons, 56 user journey map elements and over 100 user interface elements. You can easily customize and combine them when working on your wireframes.",
-        "Aside from that, I was in touch with the Director of Product and the InVision tech team to report issues and bugs that I found within the software, as well as to propose improvements regarding certain functionalities. It was exciting to see how the product evolved and improved with each update during this short time."
+        "Recreated the classic battleship boardgame using React. Used Test Driven Development to write the core logic of the app after much consideration, I chose Jest as my test runner because it’s well documented and widely used in the JS community.",
+        "Imported the core logic for the app into a gameController React component which controls the main game loop and other compenets that interact with the DOM.",
+        "The project realied heavily on the use of core React concepts like props & state."
       ]
     },
     {
@@ -34,9 +38,9 @@
       "preview_url": "https://github.com",
       "assets_url": ["mockup1.jpg", null, null],
       "paragraph_array": [
-        "Studio is a new powerful tool where you can design, prototype and animate your projects easily. One of InVision's initiatives is the Design Forward Fund, a $5 million fund dedicated to investing in the future of design. I'm happy to say that my idea was among several selected for implementation and shortly after the initial interviews, we began shaping requirements for the Basic UX project.",
-        "Our goal was to create an extensive library of components and assets to help designers wireframe their web projects faster. Over the course of 5 months I designed more than 400 layout components in 30 categories (each prepared for desktop, tablet & phone screens), 128 icons, 56 user journey map elements and over 100 user interface elements. You can easily customize and combine them when working on your wireframes.",
-        "Aside from that, I was in touch with the Director of Product and the InVision tech team to report issues and bugs that I found within the software, as well as to propose improvements regarding certain functionalities. It was exciting to see how the product evolved and improved with each update during this short time."
+        "Built a simple online store where you can browse the catalogue and add/remove items from your cart, which demonstrates an understating of Routing in React. Used Figma to design the mockup of the site before writing any code.",
+        "This project implements the use of React concepts and how you can be used to achieve the following features: Filter products by categories, Add and remove items from the shopping cart.",
+        "Implemented localStorage API to prevent users from losing items they’ve moved into their cart, while navigating the rest of the site."
       ]
     },
     {
@@ -45,11 +49,11 @@
       "tech_stack": ["HTML", "CSS", "JavaScript"],
       "code_url": "https://github.com",
       "preview_url": "https://github.com",
-      "assets_url": ["mockup4.1.jpg", null, null],
+      "assets_url": ["mockup4.1.jpg", "Weather-App.png", null],
       "paragraph_array": [
-        "Studio is a new powerful tool where you can design, prototype and animate your projects easily. One of InVision's initiatives is the Design Forward Fund, a $5 million fund dedicated to investing in the future of design. I'm happy to say that my idea was among several selected for implementation and shortly after the initial interviews, we began shaping requirements for the Basic UX project.",
-        "Our goal was to create an extensive library of components and assets to help designers wireframe their web projects faster. Over the course of 5 months I designed more than 400 layout components in 30 categories (each prepared for desktop, tablet & phone screens), 128 icons, 56 user journey map elements and over 100 user interface elements. You can easily customize and combine them when working on your wireframes.",
-        "Aside from that, I was in touch with the Director of Product and the InVision tech team to report issues and bugs that I found within the software, as well as to propose improvements regarding certain functionalities. It was exciting to see how the product evolved and improved with each update during this short time."
+        "Built Weather Application that allows users to enter a city name and receive currently weather data using the OpenWeatherMap API. All cities with the specified name are displayed and a temperature unit, a toggle is available to switch between Celsius and Fahrenheit.",
+        "This project implements the use of JavaScript concepts like ES6 Modules and also the use of asynchronous JS functionality like promises.",
+        "Webpack was the go-to bundler when the number of my JS modules was getting out of hand."
       ]
     }
   ],
