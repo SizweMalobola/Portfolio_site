@@ -1,16 +1,44 @@
 .container {
   --black-primary: black;
   --gray-primary: #8e8a8f;
-  background-color: rgb(77, 77, 77);
   width: 100%;
   text-decoration: none;
   position: relative;
+  overflow: hidden;
+}
+.container::before {
+  background-color: rgba(15, 20, 30, 0.9);
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  opacity: 0;
+  content: "";
+  box-sizing: border-box;
+  transition: opacity 0.2s linear;
+}
+.container:hover.container img {
+  transform: scale(1.02);
+}
+.container:hover::before {
+  opacity: 1;
+}
+.container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  transition: transform 0.2s linear;
 }
 .container div {
   width: 50%;
   position: absolute;
   top: 4rem;
   left: 4rem;
+  z-index: 1;
 }
 .container span {
   display: block;
