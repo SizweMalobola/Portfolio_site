@@ -6,7 +6,7 @@
       "tech_stack": ["HTML", "CSS", "JavaScript", "React"],
       "code_url": "https://github.com",
       "preview_url": "https://github.com",
-      "assets_url": [null, "url_1", "url_2"],
+      "assets_url": ["mockup3.jpg", "url_1", "url_2"],
       "paragraph_array": [
         "Studio is a new powerful tool where you can design, prototype and animate your projects easily. One of InVision's initiatives is the Design Forward Fund, a $5 million fund dedicated to investing in the future of design. I'm happy to say that my idea was among several selected for implementation and shortly after the initial interviews, we began shaping requirements for the Basic UX project.",
         "Our goal was to create an extensive library of components and assets to help designers wireframe their web projects faster. Over the course of 5 months I designed more than 400 layout components in 30 categories (each prepared for desktop, tablet & phone screens), 128 icons, 56 user journey map elements and over 100 user interface elements. You can easily customize and combine them when working on your wireframes.",
@@ -19,7 +19,7 @@
       "tech_stack": ["HTML", "CSS", "JavaScript", "React"],
       "code_url": "https://github.com",
       "preview_url": "https://github.com",
-      "assets_url": [null, "url_1", "url_2"],
+      "assets_url": ["mockup2.jpg", "url_1", "url_2"],
       "paragraph_array": [
         "Studio is a new powerful tool where you can design, prototype and animate your projects easily. One of InVision's initiatives is the Design Forward Fund, a $5 million fund dedicated to investing in the future of design. I'm happy to say that my idea was among several selected for implementation and shortly after the initial interviews, we began shaping requirements for the Basic UX project.",
         "Our goal was to create an extensive library of components and assets to help designers wireframe their web projects faster. Over the course of 5 months I designed more than 400 layout components in 30 categories (each prepared for desktop, tablet & phone screens), 128 icons, 56 user journey map elements and over 100 user interface elements. You can easily customize and combine them when working on your wireframes.",
@@ -32,7 +32,7 @@
       "tech_stack": ["HTML", "CSS", "JavaScript", "React"],
       "code_url": "https://github.com",
       "preview_url": "https://github.com",
-      "assets_url": [null, "url_1", "url_2"],
+      "assets_url": ["mockup1.jpg", "url_1", "url_2"],
       "paragraph_array": [
         "Studio is a new powerful tool where you can design, prototype and animate your projects easily. One of InVision's initiatives is the Design Forward Fund, a $5 million fund dedicated to investing in the future of design. I'm happy to say that my idea was among several selected for implementation and shortly after the initial interviews, we began shaping requirements for the Basic UX project.",
         "Our goal was to create an extensive library of components and assets to help designers wireframe their web projects faster. Over the course of 5 months I designed more than 400 layout components in 30 categories (each prepared for desktop, tablet & phone screens), 128 icons, 56 user journey map elements and over 100 user interface elements. You can easily customize and combine them when working on your wireframes.",
@@ -45,7 +45,7 @@
       "tech_stack": ["HTML", "CSS", "JavaScript"],
       "code_url": "https://github.com",
       "preview_url": "https://github.com",
-      "assets_url": [null, "url_1", "url_2"],
+      "assets_url": ["mockup4.1.jpg", "url_1", "url_2"],
       "paragraph_array": [
         "Studio is a new powerful tool where you can design, prototype and animate your projects easily. One of InVision's initiatives is the Design Forward Fund, a $5 million fund dedicated to investing in the future of design. I'm happy to say that my idea was among several selected for implementation and shortly after the initial interviews, we began shaping requirements for the Basic UX project.",
         "Our goal was to create an extensive library of components and assets to help designers wireframe their web projects faster. Over the course of 5 months I designed more than 400 layout components in 30 categories (each prepared for desktop, tablet & phone screens), 128 icons, 56 user journey map elements and over 100 user interface elements. You can easily customize and combine them when working on your wireframes.",
@@ -60,7 +60,7 @@
       "tech_stack": ["???", "???", "???"],
       "code_url": "https://github.com",
       "preview_url": "https://github.com",
-      "assets_url": [null, "url_1", "url_2"],
+      "assets_url": ["undraw_under_construction_46pa.svg", "url_1", "url_2"],
       "paragraph_array": ["project currently in the conceptual phase"]
     },
     {
@@ -69,7 +69,7 @@
       "tech_stack": ["???", "???", "???"],
       "code_url": "https://github.com",
       "preview_url": "https://github.com",
-      "assets_url": [null, "url_1", "url_2"],
+      "assets_url": ["undraw_Process_re_gws7.svg", "url_1", "url_2"],
       "paragraph_array": ["project currently in the conceptual phase"]
     }
   ]
