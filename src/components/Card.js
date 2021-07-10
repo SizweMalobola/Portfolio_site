@@ -24,7 +24,6 @@ function Card({ timeline, projectName, imgURL, height, more, id }) {
       className={styles["container"]}
       href="/#"
     >
-      {/* add imgurl */}
       <div>
         <span>{timeline}</span>
         <h2>{projectName}</h2>
@@ -32,6 +31,13 @@ function Card({ timeline, projectName, imgURL, height, more, id }) {
           {more} -{">"}
         </span>
       </div>
+      {imgURL && (
+        <img
+          style={more === "View My Progress" ? { objectFit: "contain" } : null}
+          alt="mockup of the project"
+          src={`${process.env.PUBLIC_URL}/assets/${imgURL}`}
+        />
+      )}
     </Link>
   );
 }
