@@ -20,6 +20,7 @@ function Projects({ match }) {
     }
     return dataObject;
   });
+  const imgURLs = projectData["assets_url"].slice(1);
   const introLinesRef = [];
   const secondLinesRef = [];
   const paragraphsRef = [];
@@ -35,18 +36,22 @@ function Projects({ match }) {
         duration: 0.8,
         stagger: 0.25,
       });
-    gsap.from(imagesRef[0], {
-      scrollTrigger: { trigger: imagesRef[0] },
-      duration: 0.8,
-      y: 250,
-      autoAlpha: 0,
-    });
-    gsap.from(imagesRef[1], {
-      scrollTrigger: { trigger: imagesRef[1] },
-      duration: 0.8,
-      y: 150,
-      autoAlpha: 0,
-    });
+    if (imagesRef[0]) {
+      gsap.from(imagesRef[0], {
+        scrollTrigger: { trigger: imagesRef[0] },
+        duration: 0.8,
+        y: 250,
+        autoAlpha: 0,
+      });
+    }
+    if (imagesRef[1]) {
+      gsap.from(imagesRef[1], {
+        scrollTrigger: { trigger: imagesRef[1] },
+        duration: 0.8,
+        y: 150,
+        autoAlpha: 0,
+      });
+    }
   }, []);
 
   return (
@@ -117,14 +122,22 @@ function Projects({ match }) {
           </div>
         </div>
         <div className={styles["images-container"]}>
-          <div
-            ref={(image) => imagesRef.push(image)}
-            className={styles["image"]}
-          ></div>
-          <div
-            ref={(image2) => imagesRef.push(image2)}
-            className={styles["image"]}
-          ></div>
+          {imgURLs.map((url, index) => {
+            return url ? (
+              <div
+                ref={(imgDiv) => {
+                  imagesRef.push(imgDiv);
+                }}
+                key={index + 222}
+                className={styles["image"]}
+              >
+                <img
+                  src={`${process.env.PUBLIC_URL}/assets/${url}`}
+                  alt="project showcase"
+                />
+              </div>
+            ) : null;
+          })}
         </div>
       </div>
       <GoToTop />
